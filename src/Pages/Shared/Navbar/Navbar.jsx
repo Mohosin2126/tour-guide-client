@@ -23,7 +23,12 @@ const Navbar = () => {
                             {navOptions}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Bistro Boss</a>
+                    <div className="flex">
+                    <a className="btn btn-ghost normal-case text-xl">Tour</a>
+                   <img className="h-10 w-10" src="
+                    https://i.ibb.co/54n73qD/168111-travel-icon-free-png-hq.png" alt="" />
+                    </div>
+                    
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

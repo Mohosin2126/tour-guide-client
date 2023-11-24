@@ -1,7 +1,14 @@
+import Banner from "../../Components/Banner/Banner";
+import Tourism from "../../Components/Banner/Tourism";
+
+
 const HomePage = () => {
+   
+
     return (
         <div>
-            <h1>hello this is me home </h1>
+           <Banner></Banner>
+           <Tourism></Tourism>
         </div>
     );
 };
