@@ -1,0 +1,143 @@
+[
+    {
+      "image": "image_url_1.jpg",
+      "type": "Adventure",
+      "title": "Cox's Bazar Beach Expedition",
+      "price": "$1500",
+      "location": "Cox's Bazar, Bangladesh"
+    },
+    {
+      "image": "image_url_2.jpg",
+      "type": "Cultural",
+      "title": "Sundarbans Heritage Tour",
+      "price": "$1200",
+      "location": "Sundarbans, Bangladesh"
+    },
+    {
+      "image": "image_url_3.jpg",
+      "type": "Beach",
+      "title": "Saint Martin's Island Retreat",
+      "price": "$1800",
+      "location": "Saint Martin's Island, Bangladesh"
+    },
+    {
+      "image": "image_url_4.jpg",
+      "type": "Wildlife",
+      "title": "Srimangal Tea Gardens Safari",
+      "price": "$2000",
+      "location": "Srimangal, Bangladesh"
+    },
+    {
+      "image": "image_url_5.jpg",
+      "type": "City",
+      "title": "Dhaka Urban Exploration",
+      "price": "$1000",
+      "location": "Dhaka, Bangladesh"
+    },
+    {
+      "image": "image_url_6.jpg",
+      "type": "Cruise",
+      "title": "Sundarbans Cruise Adventure",
+      "price": "$2500",
+      "location": "Sundarbans, Bangladesh"
+    },
+    {
+      "image": "image_url_7.jpg",
+      "type": "Family",
+      "title": "Cox's Bazar Family Vacation",
+      "price": "$1800",
+      "location": "Cox's Bazar, Bangladesh"
+    },
+    {
+      "image": "image_url_8.jpg",
+      "type": "Wellness",
+      "title": "Bandarban Yoga Retreat",
+      "price": "$1200",
+      "location": "Bandarban, Bangladesh"
+    },
+    {
+      "image": "image_url_9.jpg",
+      "type": "Luxury",
+      "title": "Dhaka Luxury Getaway",
+      "price": "$3500",
+      "location": "Dhaka, Bangladesh"
+    },
+    {
+      "image": "image_url_10.jpg",
+      "type": "Hiking",
+      "title": "Bandarban Scenic Trail Expedition",
+      "price": "$900",
+      "location": "Bandarban, Bangladesh"
+    },
+    {
+      "image": "image_url_11.jpg",
+      "type": "Food and Wine",
+      "title": "Dhaka Culinary Delights Tour",
+      "price": "$1600",
+      "location": "Dhaka, Bangladesh"
+    },
+    {
+      "image": "image_url_12.jpg",
+      "type": "Historical",
+      "title": "Bagerhat Historical Journey",
+      "price": "$1400",
+      "location": "Bagerhat, Bangladesh"
+    },
+    {
+      "image": "image_url_13.jpg",
+      "type": "Sports",
+      "title": "Cox's Bazar Water Sports Adventure",
+      "price": "$2200",
+      "location": "Cox's Bazar, Bangladesh"
+    },
+    {
+      "image": "image_url_14.jpg",
+      "type": "Art and Culture",
+      "title": "Dhaka Art Gallery Tour",
+      "price": "$1100",
+      "location": "Dhaka, Bangladesh"
+    },
+    {
+      "image": "image_url_15.jpg",
+      "type": "Photography",
+      "title": "Srimangal Photography Expedition",
+      "price": "$2000",
+      "location": "Srimangal, Bangladesh"
+    },
+    {
+      "image": "image_url_16.jpg",
+      "type": "Skiing",
+      "title": "Bandarban Winter Wonderland Trip",
+      "price": "$2800",
+      "location": "Bandarban, Bangladesh"
+    },
+    {
+      "image": "image_url_17.jpg",
+      "type": "Nature",
+      "title": "Sundarbans Nature Exploration",
+      "price": "$1300",
+      "location": "Sundarbans, Bangladesh"
+    },
+    {
+      "image": "image_url_18.jpg",
+      "type": "Romantic",
+      "title": "Cox's Bazar Romantic Getaway",
+      "price": "$3000",
+      "location": "Cox's Bazar, Bangladesh"
+    },
+    {
+      "image": "image_url_19.jpg",
+      "type": "Educational",
+      "title": "Dhaka Science and History Expedition",
+      "price": "$1600",
+      "location": "Dhaka, Bangladesh"
+    },
+    {
+      "image": "image_url_20.jpg",
+      "type": "Festival",
+      "title": "Chittagong Cultural Festival Tour",
+      "price": "$1800",
+      "location": "Chittagong, Bangladesh"
+    }
+  ]
+  
