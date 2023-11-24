@@ -1,0 +1,164 @@
+// tourGuideData.json
+[
+    {
+      "name": "Sara Ahmed",
+      "profilePicture": "https://example.com/sara-ahmed-profile.jpg",
+      "contactDetails": {
+        "email": "sara.ahmed@example.com",
+        "phone": "+880 1712 345678",
+        "location": "Dhaka, Bangladesh"
+      },
+      "education": {
+        "degree": "Bachelor of Tourism Management",
+        "major": "Tourism",
+        "school": "Tourism University Bangladesh",
+        "graduationYear": 2016
+      },
+      "skills": {
+        "communication": true,
+        "culturalExpertise": true,
+        "customerEngagement": true
+      }
+    },
+    {
+      "name": "Rahim Khan",
+      "profilePicture": "https://example.com/rahim-khan-profile.jpg",
+      "contactDetails": {
+        "email": "rahim.khan@example.com",
+        "phone": "+880 1712 345679",
+        "location": "Chittagong, Bangladesh"
+      },
+      "education": {
+        "degree": "Bachelor of Arts",
+        "major": "History",
+        "school": "Chittagong University",
+        "graduationYear": 2014
+      },
+      "skills": {
+        "localHistoryExpertise": true,
+        "adventureTours": true,
+        "communication": true
+      }
+    },
+    {
+      "name": "Aisha Rahman",
+      "profilePicture": "https://example.com/aisha-rahman-profile.jpg",
+      "contactDetails": {
+        "email": "aisha.rahman@example.com",
+        "phone": "+880 1712 345680",
+        "location": "Sylhet, Bangladesh"
+      },
+      "education": {
+        "degree": "Bachelor of Hotel Management",
+        "major": "Hospitality",
+        "school": "Sylhet Hotel School",
+        "graduationYear": 2018
+      },
+      "skills": {
+        "hospitalityManagement": true,
+        "culinaryTours": true,
+        "customerService": true
+      }
+    },
+    {
+      "name": "Kabir Islam",
+      "profilePicture": "https://example.com/kabir-islam-profile.jpg",
+      "contactDetails": {
+        "email": "kabir.islam@example.com",
+        "phone": "+880 1712 345681",
+        "location": "Rangamati, Bangladesh"
+      },
+      "education": {
+        "degree": "Bachelor of Environmental Science",
+        "major": "Ecotourism",
+        "school": "Rangamati University",
+        "graduationYear": 2017
+      },
+      "skills": {
+        "ecotourismManagement": true,
+        "natureExploration": true,
+        "environmentalEducation": true
+      }
+    },
+    {
+      "name": "Nadia Chowdhury",
+      "profilePicture": "https://example.com/nadia-chowdhury-profile.jpg",
+      "contactDetails": {
+        "email": "nadia.chowdhury@example.com",
+        "phone": "+880 1712 345682",
+        "location": "Khulna, Bangladesh"
+      },
+      "education": {
+        "degree": "Bachelor of Fine Arts",
+        "major": "Art and Culture",
+        "school": "Khulna Art Institute",
+        "graduationYear": 2016
+      },
+      "skills": {
+        "artAndCultureTours": true,
+        "creativeWorkshops": true,
+        "multimediaPresentations": true
+      }
+    },
+    {
+      "name": "Imran Hassan",
+      "profilePicture": "https://example.com/imran-hassan-profile.jpg",
+      "contactDetails": {
+        "email": "imran.hassan@example.com",
+        "phone": "+880 1712 345683",
+        "location": "Barisal, Bangladesh"
+      },
+      "education": {
+        "degree": "Bachelor of Commerce",
+        "major": "Business Administration",
+        "school": "Barisal University",
+        "graduationYear": 2015
+      },
+      "skills": {
+        "businessTours": true,
+        "marketExploration": true,
+        "entrepreneurialInsights": true
+      }
+    },
+    {
+      "name": "Tasnim Akhtar",
+      "profilePicture": "https://example.com/tasnim-akhtar-profile.jpg",
+      "contactDetails": {
+        "email": "tasnim.akhtar@example.com",
+        "phone": "+880 1712 345684",
+        "location": "Rajshahi, Bangladesh"
+      },
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Natural Sciences",
+        "school": "Rajshahi University",
+        "graduationYear": 2017
+      },
+      "skills": {
+        "natureTours": true,
+        "birdWatching": true,
+        "environmentalInterpretation": true
+      }
+    },
+    {
+      "name": "Farhana Khan",
+      "profilePicture": "https://example.com/farhana-khan-profile.jpg",
+      "contactDetails": {
+        "email": "farhana.khan@example.com",
+        "phone": "+880 1712 345685",
+        "location": "Mymensingh, Bangladesh"
+      },
+      "education": {
+        "degree": "Bachelor of Agricultural Science",
+        "major": "Agricultural Tourism",
+        "school": "Mymensingh Agricultural University",
+        "graduationYear": 2016
+      },
+      "skills": {
+        "agriculturalTours": true,
+        "farmVisits": true,
+        "agroTourismDevelopment": true
+      }
+    }
+  ]
+  
