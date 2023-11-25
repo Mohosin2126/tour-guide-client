@@ -2,11 +2,13 @@ import usePlace from "../../Hook/usePlace";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import TourPackages from "./TourPackages";
+import useGuide from "../../Hook/useGuide";
 
 const TourismData = () => {
   const [places] = usePlace([]);  // Assuming usePlace returns an array of places with a structure similar to travel packages
   console.log(places);
-
+const [guides]=useGuide([])
+console.log(guides)
   return (
    <div>
      <div className="text-center">

@@ -1,7 +1,7 @@
 
 import { FaHeart } from "react-icons/fa";
 const TourPackages = ({place}) => {
-    const{image,type,title,price,location,category}=place
+    const{image,type,title,price,}=place
     console.log(place)
     return (
         <div>
