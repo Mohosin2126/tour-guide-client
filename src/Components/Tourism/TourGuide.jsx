@@ -1,6 +1,6 @@
 
 const TourGuide = ({guide}) => {
-  const {name,profilePicture,contactDetails,education,skills}=guide
+  const {name,profilePicture,contactDetails}=guide
     return (
         <div>
             
