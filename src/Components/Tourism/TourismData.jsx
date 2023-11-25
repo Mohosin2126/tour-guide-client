@@ -21,7 +21,7 @@ const TourismData = () => {
         </TabPanel>
         
         <TabPanel>
-        <div className="flex flex-cols justify-evenly">
+        <div className="lg:flex flex-cols justify-evenly mt-5 ">
         {
             places.slice(0, 3).map(place => <TourPackages place={place} key={place.id} />)
           }
