@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "category": "Adventure",
+      "image": "https://i.ibb.co/Dz0Hrct/167378cd9499a85e212b222995be4d47.webp"
+    },
+    {
+      "id": 2,
+      "category": "Nature",
+      "image": "https://i.ibb.co/gtpdwFd/DSC-0020.jpg"
+    },
+    {
+      "id": 3,
+      "category": "Beach",
+      "image": "https://i.ibb.co/TM36TyP/b140121002-banner-size.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Hiking",
+      "image": "https://i.ibb.co/PFvYtkK/best-view-of-keokradong.jpg"
+    },
+    {
+      "id": 5,
+      "category": "Historical",
+      "image": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg"
+    }
+  ]
+  
