@@ -39,7 +39,7 @@ All Packages
         </TabPanel>
 
         <TabPanel>
-          <div>
+          <div className="flex flex-wrap justify-evenly gap-3">
             {
               guides.map(guide=><TourGuide guide={guide} key={guide.id}></TourGuide>)
             }

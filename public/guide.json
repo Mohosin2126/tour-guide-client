@@ -15,9 +15,9 @@
           "graduationYear": 2016
       },
       "skills": {
-          "communication": true,
-          "culturalExpertise": true,
-          "customerEngagement": true
+          "one":  "communication",
+          "two": "culturalExpertise",
+          "three": "customerEngagement"
       }
   },
   {
@@ -36,9 +36,9 @@
           "graduationYear": 2014
       },
       "skills": {
-          "localHistoryExpertise": true,
-          "adventureTours": true,
-          "communication": true
+          "one":  "localHistoryExpertise",
+          "adventureTours":"adventureTours",
+          "communication": "communication"
       }
   },
   {
@@ -57,9 +57,9 @@
           "graduationYear": 2018
       },
       "skills": {
-          "hospitalityManagement": true,
-          "culinaryTours": true,
-          "customerService": true
+        "one": "hospitalityManagement",
+          "culinaryTours": "culinaryTours",
+          "customerService":"customerService"
       }
   },
   {
@@ -78,9 +78,9 @@
           "graduationYear": 2017
       },
       "skills": {
-          "ecotourismManagement": true,
-          "natureExploration": true,
-          "environmentalEducation": true
+        "one": "ecotourismManagement",
+          "natureExploration":"natureExploration",
+          "environmentalEducation":"environmentalEducation"
       }
   },
   {
@@ -99,9 +99,9 @@
           "graduationYear": 2016
       },
       "skills": {
-          "artAndCultureTours": true,
-          "creativeWorkshops": true,
-          "multimediaPresentations": true
+        "one":"artAndCultureTours",
+          "creativeWorkshops":  "creativeWorkshops",
+          "multimediaPresentations":"multimediaPresentations"
       }
   },
   {
@@ -120,9 +120,9 @@
           "graduationYear": 2015
       },
       "skills": {
-          "businessTours": true,
-          "marketExploration": true,
-          "entrepreneurialInsights": true
+        "one":  "businessTours",
+          "marketExploration":"marketExploration",
+          "entrepreneurialInsights":  "entrepreneurialInsights"
       }
   },
   {
@@ -141,9 +141,9 @@
           "graduationYear": 2017
       },
       "skills": {
-          "natureTours": true,
-          "birdWatching": true,
-          "environmentalInterpretation": true
+        "one":"natureTours",
+          "birdWatching":  "birdWatching",
+          "environmentalInterpretation": "environmentalInterpretation"
       }
   },
   {
@@ -162,9 +162,9 @@
           "graduationYear": 2016
       },
       "skills": {
-          "agriculturalTours": true,
-          "farmVisits": true,
-          "agroTourismDevelopment": true
+        "one": "agriculturalTours",
+          "farmVisits": "farmVisits",
+          "agroTourismDevelopment": "agroTourismDevelopment"
       }
   }
 ]
