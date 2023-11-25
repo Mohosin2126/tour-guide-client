@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const usePlace=()=>{
-const[place,setPlace]=useState([])
+const[places,setPlace]=useState([])
 const [loading,setLoading]=useState(true)
 useEffect(()=>{
     fetch("../../public/data.json")
@@ -12,6 +12,6 @@ useEffect(()=>{
         setLoading(false)
     })
 },[])
-return [place,loading]
+return [places,loading]
 }
 export default usePlace;
