@@ -8,11 +8,13 @@ const TourPackages = ({place}) => {
             <div className="card card-compact h-96 w-96 bg-base-100 shadow-xl">
         <figure><img src={image}alt="Shoes" /></figure>
         <div className="card-body">
-          <h2 className="card-title">{type}</h2>
-          <p>{title}</p>
-          <p>{price}</p>
+          <h2 className="card-title font-serif ">{type}</h2>
+          <p className="text-start font-sans ">{title}</p>
+          <p className="text-start font-sans ">{price}</p>
           <div className="card-actions">
-            <button className="btn btn-primary">View Package</button>
+          <button className="bg-transparent hover:bg-red-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+View Package
+</button>
           </div>
         </div>
       </div>
