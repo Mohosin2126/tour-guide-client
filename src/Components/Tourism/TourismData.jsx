@@ -8,7 +8,8 @@ const TourismData = () => {
   console.log(places);
 
   return (
-    <div className="text-center">
+   <div>
+     <div className="text-center">
       <Tabs>
         <TabList>
           <Tab>Overview</Tab>
@@ -21,11 +22,17 @@ const TourismData = () => {
         </TabPanel>
         
         <TabPanel>
-        <div className="lg:flex flex-cols justify-evenly mt-5 ">
+       <div>
+       <div className="lg:flex flex-cols justify-evenly mt-5 ">
         {
             places.slice(0, 3).map(place => <TourPackages place={place} key={place.id} />)
           }
+       
         </div>
+        <button className=" mt-5 flex mx-auto bg-transparent hover:bg-red-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+All Packages
+</button>
+       </div>
         </TabPanel>
 
         <TabPanel>
@@ -33,6 +40,8 @@ const TourismData = () => {
         </TabPanel>
       </Tabs>
     </div>
+  
+   </div>
   );
 };
 
