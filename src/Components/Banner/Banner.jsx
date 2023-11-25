@@ -36,7 +36,7 @@ const Banner = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 8000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -117,6 +117,9 @@ const Banner = () => {
       {/* <div className=" block absolute -mt-28"  >
         <BannerExtended></BannerExtended>
       </div> */}
+      <div >
+{autoplayTime}
+      </div>
      </div>
     </>
   );
