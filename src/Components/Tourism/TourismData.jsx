@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import TourPackages from "./TourPackages";
 import useGuide from "../../Hook/useGuide";
+import TourGuide from "./TourGuide";
 
 const TourismData = () => {
   const [places] = usePlace([]);  // Assuming usePlace returns an array of places with a structure similar to travel packages
@@ -38,7 +39,11 @@ All Packages
         </TabPanel>
 
         <TabPanel>
-          <h2>Any content 2</h2>
+          <div>
+            {
+              guides.map(guide=><TourGuide guide={guide} key={guide.id}></TourGuide>)
+            }
+          </div>
         </TabPanel>
       </Tabs>
     </div>
