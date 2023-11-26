@@ -5,6 +5,7 @@ import {
 import Layout from "../Layout/Layout";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import HomePage from "../Pages/HomePage/HomePage";
+import PackageDetails from "../Pages/PackageDetails/PackageDetails";
 
  export const router = createBrowserRouter([
     {
@@ -15,6 +16,11 @@ import HomePage from "../Pages/HomePage/HomePage";
         {
 path:"/",
 element:<HomePage></HomePage>
+        },
+        {
+          path:"/packagedetails/:id",
+          element:<PackageDetails></PackageDetails>,
+          loader:()=>fetch("http://localhost:5000/data"),
         },
       ]
     },
