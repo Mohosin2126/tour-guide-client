@@ -5,7 +5,7 @@ const useCategory = () => {
     
     const [loading,setLoading]=useState(true)
     useEffect(()=>{
-        fetch("../../public/category.json")
+        fetch("http://localhost:5000/category")
         .then(res=>res.json())
         .then(data=>{
            
