@@ -4,7 +4,7 @@ const usePlace=()=>{
 const[places,setPlace]=useState([])
 const [loading,setLoading]=useState(true)
 useEffect(()=>{
-    fetch("../../public/data.json")
+    fetch("http://localhost:5000/data")
     .then(res=>res.json())
     .then(data=>{
        

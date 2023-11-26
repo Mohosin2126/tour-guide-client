@@ -1,6 +1,6 @@
 [
   {
-      "id": 1,
+
       "image": "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
       "gallery": [
           "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -15,7 +15,7 @@
       "category": "Adventure"
   },
   {
-      "id": 2,
+
       "image": "https://i.ibb.co/Dz0Hrct/167378cd9499a85e212b222995be4d47.webp",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -30,7 +30,7 @@
       "category": "Adventure"
   },
   {
-      "id": 3,
+
       "image": "https://i.ibb.co/LYCmQvL/xbeautiful-2-orient-beach-saint-martin-sxm-jpg-pagespeed-ic-g-PCJ1-DBDe-A.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -45,7 +45,7 @@
       "category": "Beach"
   },
   {
-      "id": 4,
+ 
       "image": "https://i.ibb.co/BzNSBTN/0feafa42b06d20ed21d1840a48d7cc9f.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -59,8 +59,7 @@
       "location": "Srimangal, Bangladesh",
       "category": "Adventure"
   },
-  {
-      "id": 5,
+  {  
       "image": "https://i.ibb.co/TM36TyP/b140121002-banner-size.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -75,7 +74,7 @@
       "category": "Beach"
   },
   {
-      "id": 6,
+      
       "image": "https://i.ibb.co/rMcyVxz/1-f-NGAr-Uh-V6-H95g-Rfi8456o-Q.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -90,7 +89,7 @@
       "category": "Adventure"
   },
   {
-      "id": 7,
+  
       "image": "https://i.ibb.co/BrHV5gs/blogi-JR0-K1s-WVNFzin-GC-l4r3-Ids-VLyx-Zfkr.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -105,7 +104,6 @@
       "category": "Beach"
   },
   {
-      "id": 8,
       "image": "https://i.ibb.co/RzThn61/ea6548be83a933ddd131651d3bb1a2f9.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -120,7 +118,7 @@
       "category": "Hiking"
   },
   {
-      "id": 9,
+     
       "image": "https://i.ibb.co/BscmbfJ/345053324.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -135,7 +133,7 @@
       "category": "Beach"
   },
   {
-      "id": 10,
+     
       "image": "https://i.ibb.co/PFvYtkK/best-view-of-keokradong.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -150,7 +148,7 @@
       "category": "Hiking"
   },
   {
-      "id": 11,
+    
       "image": "https://i.ibb.co/fr9Kh4X/flavours-of-hills-2.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -165,7 +163,7 @@
       "category": "Hiking"
   },
   {
-      "id": 12,
+ 
       "image": "https://i.ibb.co/gv1cScs/Sixty-Dome-Mosque-Bagerhat.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -180,7 +178,6 @@
       "category": "Nature"
   },
   {
-      "id": 13,
       "image": "https://i.ibb.co/5v7v4xZ/caption.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -195,7 +192,7 @@
       "category": "Hiking"
   },
   {
-      "id": 14,
+      
       "image": "https://i.ibb.co/gtpdwFd/DSC-0020.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -210,7 +207,7 @@
       "category": "Nature"
   },
   {
-      "id": 15,
+    
       "image": "https://i.ibb.co/JpZbjxs/a-train-journey-will-go-through-the-jungle-of-lawachora.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -225,7 +222,7 @@
       "category": "Nature"
   },
   {
-      "id": 16,
+     
       "image": "https://i.ibb.co/fr9Kh4X/flavours-of-hills-2.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -240,7 +237,7 @@
       "category": "Historical"
   },
   {
-      "id": 17,
+ 
       "image": "https://i.ibb.co/vQVRryF/1582060099-9.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -255,7 +252,7 @@
       "category": "Nature"
   },
   {
-      "id": 18,
+  
       "image": "https://i.ibb.co/b32pzNF/600807-sunset-5262335-1280.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -270,7 +267,7 @@
       "category": "Historical"
   },
   {
-      "id": 19,
+  
       "image": "https://i.ibb.co/gFKw5cB/mehedi-hasan00004-1546542897954.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
@@ -285,7 +282,7 @@
       "category": "Historical"
   },
   {
-      "id": 20,
+
       "image": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg",
       "gallery": [
         "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
