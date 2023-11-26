@@ -6,7 +6,7 @@ const useGuide = () => {
     console.log(guides)
     const [loading,setLoading]=useState(true)
     useEffect(()=>{
-        fetch("../../public/guide.json")
+        fetch("http://localhost:5000/guide")
         .then(res=>res.json())
         .then(data=>{
            
