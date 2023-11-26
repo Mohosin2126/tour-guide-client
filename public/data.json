@@ -1,299 +1,317 @@
 [
   {
-
-      "image": "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-      "gallery": [
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Adventure",
-      "title": "Adventure at Cox's Bazar Beach",
-      "price": "$1500",
-      "location": "Cox's Bazar, Bangladesh",
-      "category": "Adventure"
-  },
-  {
-
-      "image": "https://i.ibb.co/Dz0Hrct/167378cd9499a85e212b222995be4d47.webp",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Adventure",
-      "title": "Immerse in Sundarbans Heritage",
-      "price": "$1200",
-      "location": "Sundarbans, Bangladesh",
-      "category": "Adventure"
-  },
-  {
-
-      "image": "https://i.ibb.co/LYCmQvL/xbeautiful-2-orient-beach-saint-martin-sxm-jpg-pagespeed-ic-g-PCJ1-DBDe-A.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Beach",
-      "title": "Relax at Saint Martin's Island",
-      "price": "$1800",
-      "location": "Saint Martin's Island, Bangladesh",
-      "category": "Beach"
-  },
-  {
- 
-      "image": "https://i.ibb.co/BzNSBTN/0feafa42b06d20ed21d1840a48d7cc9f.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Wildlife",
-      "title": "Explore Srimangal Tea Gardens",
-      "price": "$2000",
-      "location": "Srimangal, Bangladesh",
-      "category": "Adventure"
-  },
-  {  
-      "image": "https://i.ibb.co/TM36TyP/b140121002-banner-size.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Beach",
-      "title": "Relax at Cox's Bazar",
-      "price": "$1000",
-      "location": "Cox's Bazar, Bangladesh",
-      "category": "Beach"
-  },
-  {
-      
-      "image": "https://i.ibb.co/rMcyVxz/1-f-NGAr-Uh-V6-H95g-Rfi8456o-Q.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Cruise",
-      "title": "Sundarbans Cruise Adventure",
-      "price": "$2500",
-      "location": "Sundarbans, Bangladesh",
-      "category": "Adventure"
-  },
-  {
-  
-      "image": "https://i.ibb.co/BrHV5gs/blogi-JR0-K1s-WVNFzin-GC-l4r3-Ids-VLyx-Zfkr.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Family",
-      "title": "Family Fun at Cox's Bazar",
-      "price": "$1800",
-      "location": "Cox's Bazar, Bangladesh",
-      "category": "Beach"
-  },
-  {
-      "image": "https://i.ibb.co/RzThn61/ea6548be83a933ddd131651d3bb1a2f9.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Wellness",
-      "title": "Bandarban Yoga Retreat",
-      "price": "$1200",
-      "location": "Bandarban, Bangladesh",
-      "category": "Hiking"
-  },
-  {
-     
-      "image": "https://i.ibb.co/BscmbfJ/345053324.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Luxury",
-      "title": "Luxurious Getaway in Cox's Bazar",
-      "price": "$3500",
-      "location": "Cox's Bazar, Bangladesh",
-      "category": "Beach"
-  },
-  {
-     
-      "image": "https://i.ibb.co/PFvYtkK/best-view-of-keokradong.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Hiking",
-      "title": "Scenic Trail Expedition in Bandarban",
-      "price": "$900",
-      "location": "Bandarban, Bangladesh",
-      "category": "Hiking"
-  },
-  {
-    
-      "image": "https://i.ibb.co/fr9Kh4X/flavours-of-hills-2.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Hiking",
-      "title": "Culinary Delights in Bandarban",
-      "price": "$1600",
-      "location": "Bandarban, Bangladesh",
-      "category": "Hiking"
-  },
-  {
- 
-      "image": "https://i.ibb.co/gv1cScs/Sixty-Dome-Mosque-Bagerhat.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-          "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Historical",
-      "title": "Journey through Bagerhat's History",
-      "price": "$1400",
-      "location": "Bagerhat, Bangladesh",
-      "category": "Nature"
-  },
-  {
-      "image": "https://i.ibb.co/5v7v4xZ/caption.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Hiking",
-      "title": "Water Sports Adventure at Cox's Bazar",
-      "price": "$2200",
-      "location": "Cox's Bazar, Bangladesh",
-      "category": "Hiking"
-  },
-  {
-      
-      "image": "https://i.ibb.co/gtpdwFd/DSC-0020.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Art and Culture",
-      "title": "Art Gallery Tour in Dhaka",
-      "price": "$1100",
-      "location": "Dhaka, Bangladesh",
-      "category": "Nature"
-  },
-  {
-    
-      "image": "https://i.ibb.co/JpZbjxs/a-train-journey-will-go-through-the-jungle-of-lawachora.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Photography",
-      "title": "Photography Expedition in Srimangal",
-      "price": "$2000",
-      "location": "Srimangal, Bangladesh",
-      "category": "Nature"
-  },
-  {
-     
-      "image": "https://i.ibb.co/fr9Kh4X/flavours-of-hills-2.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Historical",
-      "title": "Winter Wonderland Trip in Bandarban",
-      "price": "$2800",
-      "location": "Bandarban, Bangladesh",
-      "category": "Historical"
-  },
-  {
- 
-      "image": "https://i.ibb.co/vQVRryF/1582060099-9.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Nature",
-      "title": "Nature Exploration in Sundarbans",
-      "price": "$1300",
-      "location": "Sundarbans, Bangladesh",
-      "category": "Nature"
-  },
-  {
-  
-      "image": "https://i.ibb.co/b32pzNF/600807-sunset-5262335-1280.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Romantic",
-      "title": "Romantic Getaway at Cox's Bazar",
-      "price": "$3000",
-      "location": "Cox's Bazar, Bangladesh",
-      "category": "Historical"
-  },
-  {
-  
-      "image": "https://i.ibb.co/gFKw5cB/mehedi-hasan00004-1546542897954.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Educational",
-      "title": "Science and History Expedition in Dhaka",
-      "price": "$1600",
-      "location": "Dhaka, Bangladesh",
-      "category": "Historical"
-  },
-  {
-
-      "image": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg",
-      "gallery": [
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
-        "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
-      ],
-      "type": "Festival",
-      "title": "Cultural Festival Tour in Chittagong",
-      "price": "$1800",
-      "location": "Chittagong, Bangladesh",
-      "category": "Historical"
-  }
+  "image": "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Adventure",
+  "title": "Adventure at Cox's Bazar Beach",
+  "price": "$1500",
+  "location": "Cox's Bazar, Bangladesh",
+  "category": "Adventure",
+  "coverPhoto": "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+},
+{
+  "image": "https://i.ibb.co/Dz0Hrct/167378cd9499a85e212b222995be4d47.webp",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Adventure",
+  "title": "Immerse in Sundarbans Heritage",
+  "price": "$1200",
+  "location": "Sundarbans, Bangladesh",
+  "category": "Adventure",
+  "coverPhoto": "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+},
+{
+  "image": "https://i.ibb.co/LYCmQvL/xbeautiful-2-orient-beach-saint-martin-sxm-jpg-pagespeed-ic-g-PCJ1-DBDe-A.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Beach",
+  "title": "Relax at Saint Martin's Island",
+  "price": "$1800",
+  "location": "Saint Martin's Island, Bangladesh",
+  "category": "Beach",
+  "coverPhoto": "https://i.ibb.co/LYCmQvL/xbeautiful-2-orient-beach-saint-martin-sxm-jpg-pagespeed-ic-g-PCJ1-DBDe-A.jpg"
+},
+{
+  "image": "https://i.ibb.co/BzNSBTN/0feafa42b06d20ed21d1840a48d7cc9f.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Wildlife",
+  "title": "Explore Srimangal Tea Gardens",
+  "price": "$2000",
+  "location": "Srimangal, Bangladesh",
+  "category": "Adventure",
+  "coverPhoto": "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+},
+{
+  "image": "https://i.ibb.co/TM36TyP/b140121002-banner-size.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Beach",
+  "title": "Relax at Cox's Bazar",
+  "price": "$1000",
+  "location": "Cox's Bazar, Bangladesh",
+  "category": "Beach",
+  "coverPhoto": "https://i.ibb.co/LYCmQvL/xbeautiful-2-orient-beach-saint-martin-sxm-jpg-pagespeed-ic-g-PCJ1-DBDe-A.jpg"
+},
+{
+  "image": "https://i.ibb.co/rMcyVxz/1-f-NGAr-Uh-V6-H95g-Rfi8456o-Q.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Cruise",
+  "title": "Sundarbans Cruise Adventure",
+  "price": "$2500",
+  "location": "Sundarbans, Bangladesh",
+  "category": "Adventure",
+  "coverPhoto": "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+},
+{
+  "image": "https://i.ibb.co/BrHV5gs/blogi-JR0-K1s-WVNFzin-GC-l4r3-Ids-VLyx-Zfkr.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Family",
+  "title": "Family Fun at Cox's Bazar",
+  "price": "$1800",
+  "location": "Cox's Bazar, Bangladesh",
+  "category": "Beach",
+  "coverPhoto": "https://i.ibb.co/LYCmQvL/xbeautiful-2-orient-beach-saint-martin-sxm-jpg-pagespeed-ic-g-PCJ1-DBDe-A.jpg"
+},
+{
+  "image": "https://i.ibb.co/RzThn61/ea6548be83a933ddd131651d3bb1a2f9.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Wellness",
+  "title": "Bandarban Yoga Retreat",
+  "price": "$1200",
+  "location": "Bandarban, Bangladesh",
+  "category": "Hiking",
+  "coverPhoto": "https://i.ibb.co/5v7v4xZ/caption.jpg"
+},
+{
+  "image": "https://i.ibb.co/BscmbfJ/345053324.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Luxury",
+  "title": "Luxurious Getaway in Cox's Bazar",
+  "price": "$3500",
+  "location": "Cox's Bazar, Bangladesh",
+  "category": "Beach",
+  "coverPhoto": "https://i.ibb.co/LYCmQvL/xbeautiful-2-orient-beach-saint-martin-sxm-jpg-pagespeed-ic-g-PCJ1-DBDe-A.jpg"
+},
+{
+  "image": "https://i.ibb.co/PFvYtkK/best-view-of-keokradong.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Hiking",
+  "title": "Scenic Trail Expedition in Bandarban",
+  "price": "$900",
+  "location": "Bandarban, Bangladesh",
+  "category": "Hiking",
+  "coverPhoto": "https://i.ibb.co/5v7v4xZ/caption.jpg"
+},
+{
+  "image": "https://i.ibb.co/fr9Kh4X/flavours-of-hills-2.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Hiking",
+  "title": "Culinary Delights in Bandarban",
+  "price": "$1600",
+  "location": "Bandarban, Bangladesh",
+  "category": "Hiking",
+  "coverPhoto": "https://i.ibb.co/5v7v4xZ/caption.jpg"
+},
+{
+  "image": "https://i.ibb.co/gv1cScs/Sixty-Dome-Mosque-Bagerhat.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Historical",
+  "title": "Journey through Bagerhat's History",
+  "price": "$1400",
+  "location": "Bagerhat, Bangladesh",
+  "category": "Nature",
+  "coverPhoto": "https://i.ibb.co/5v7v4xZ/caption.jpg"
+},
+{
+  "image": "https://i.ibb.co/5v7v4xZ/caption.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Hiking",
+  "title": "Water Sports Adventure at Cox's Bazar",
+  "price": "$2200",
+  "location": "Cox's Bazar, Bangladesh",
+  "category": "Hiking",
+  "coverPhoto": "https://i.ibb.co/5v7v4xZ/caption.jpg"
+},
+{
+  "image": "https://i.ibb.co/5v7v4xZ/caption.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Hiking",
+  "title": "Water Sports Adventure at Cox's Bazar",
+  "price": "$2200",
+  "location": "Cox's Bazar, Bangladesh",
+  "category": "Hiking",
+  "coverPhoto": "https://i.ibb.co/5v7v4xZ/caption.jpg"
+},
+{
+  "image": "https://i.ibb.co/gtpdwFd/DSC-0020.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Art and Culture",
+  "title": "Art Gallery Tour in Dhaka",
+  "price": "$1100",
+  "location": "Dhaka, Bangladesh",
+  "category": "Nature",
+  "coverPhoto": "https://i.ibb.co/vQVRryF/1582060099-9.jpg"
+},
+{
+  "image": "https://i.ibb.co/JpZbjxs/a-train-journey-will-go-through-the-jungle-of-lawachora.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Photography",
+  "title": "Photography Expedition in Srimangal",
+  "price": "$2000",
+  "location": "Srimangal, Bangladesh",
+  "category": "Nature",
+  "coverPhoto": "https://i.ibb.co/vQVRryF/1582060099-9.jpg"
+},
+{
+  "image": "https://i.ibb.co/fr9Kh4X/flavours-of-hills-2.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Historical",
+  "title": "Winter Wonderland Trip in Bandarban",
+  "price": "$2800",
+  "location": "Bandarban, Bangladesh",
+  "category": "Historical",
+  "coverPhoto": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg"
+},
+{
+  "image": "https://i.ibb.co/vQVRryF/1582060099-9.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Nature",
+  "title": "Nature Exploration in Sundarbans",
+  "price": "$1300",
+  "location": "Sundarbans, Bangladesh",
+  "category": "Nature",
+  "coverPhoto": "https://i.ibb.co/vQVRryF/1582060099-9.jpg"
+},
+{
+  "image": "https://i.ibb.co/b32pzNF/600807-sunset-5262335-1280.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Romantic",
+  "title": "Romantic Getaway at Cox's Bazar",
+  "price": "$3000",
+  "location": "Cox's Bazar, Bangladesh",
+  "category": "Historical",
+  "coverPhoto": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg"
+},
+{
+  "image": "https://i.ibb.co/gFKw5cB/mehedi-hasan00004-1546542897954.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Educational",
+  "title": "Science and History Expedition in Dhaka",
+  "price": "$1600",
+  "location": "Dhaka, Bangladesh",
+  "category": "Historical",
+  "coverPhoto": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg"
+},
+{
+  "image": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg",
+  "gallery": [
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+    "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  ],
+  "type": "Festival",
+  "title": "Cultural Festival Tour in Chittagong",
+  "price": "$1800",
+  "location": "Chittagong, Bangladesh",
+  "category": "Historical",
+  "coverPhoto": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg"
+}
 ]

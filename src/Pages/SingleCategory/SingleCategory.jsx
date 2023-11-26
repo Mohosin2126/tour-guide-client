@@ -20,8 +20,7 @@ const SingleCategory = () => {
 
 
     return (
-        <div>
-            
+        <div>   
 <div className="flex flex-wrap justify-center">
 {
     allCategoryType.map(allcategory=><CategoryData allcategory={allcategory} key={allcategory._id}></CategoryData>)
