@@ -1,27 +1,29 @@
-[
-    {
-    
-      "category": "Adventure",
-      "image": "https://i.ibb.co/Dz0Hrct/167378cd9499a85e212b222995be4d47.webp"
-    },
-    {
-      "category": "Nature",
-      "image": "https://i.ibb.co/vQVRryF/1582060099-9.jpg"
-    },
-    {
+ [
+  {
+    "category": "Adventure",
+    "image": "https://i.ibb.co/Dz0Hrct/167378cd9499a85e212b222995be4d47.webp",
+    "coverPhoto": "URL_TO_ADVENTURE_COVER_PHOTO"
+  },
+  {
+    "category": "Nature",
+    "image": "https://i.ibb.co/vQVRryF/1582060099-9.jpg",
+    "coverPhoto": "URL_TO_NATURE_COVER_PHOTO"
+  },
+  {
+    "category": "Beach",
+    "image": "https://i.ibb.co/TM36TyP/b140121002-banner-size.jpg",
+    "coverPhoto": "URL_TO_BEACH_COVER_PHOTO"
+  },
+  {
+    "category": "Hiking",
+    "image": "https://i.ibb.co/PFvYtkK/best-view-of-keokradong.jpg",
+    "coverPhoto": "URL_TO_HIKING_COVER_PHOTO"
+  },
+  {
+    "category": "Historical",
+    "image": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg",
+    "coverPhoto": "URL_TO_HISTORICAL_COVER_PHOTO"
+  }
+]
 
-      "category": "Beach",
-      "image": "https://i.ibb.co/TM36TyP/b140121002-banner-size.jpg"
-    },
-    {
-      
-      "category": "Hiking",
-      "image": "https://i.ibb.co/PFvYtkK/best-view-of-keokradong.jpg"
-    },
-    {
-   
-      "category": "Historical",
-      "image": "https://i.ibb.co/9HHdNcx/bangladeshi-tribal-people-take-part-in-a-330003.jpg"
-    }
-  ]
-  
+

@@ -32,8 +32,8 @@ const TourType = () => {
                     className="mySwiper"
                 >
                     {
-                        categories.map(tourcategory => <SwiperSlide key={tourcategory.id}>
-                            <Link>
+                        categories.map(tourcategory => <SwiperSlide key={tourcategory._id}>
+                            <Link to={`/tourcategory/${tourcategory.category}`}>
                                <div className="flex justify-center gap-5">
                               
            <div className="card md:w-1/2 h-56 bg-base-300 shadow-xl image-full">
