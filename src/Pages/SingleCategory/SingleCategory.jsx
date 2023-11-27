@@ -5,11 +5,7 @@ import CategoryData from "./CategoryData";
 const SingleCategory = () => {
     const allCategories=useLoaderData()
     const {category}=useParams()
-    const [allCategoryType,setallCategoryType]=useState([])
-    
-
-    
-    
+    const [allCategoryType,setallCategoryType]=useState([])  
      useEffect(()=>{
     
       const categories=allCategories.filter(items=>items.category == category)
@@ -20,8 +16,8 @@ const SingleCategory = () => {
 
 
     return (
-        <div>   
-<div className="flex flex-wrap justify-center">
+        <div> 
+<div className="flex flex-wrap gap-4 justify-center">
 {
     allCategoryType.map(allcategory=><CategoryData allcategory={allcategory} key={allcategory._id}></CategoryData>)
 }
