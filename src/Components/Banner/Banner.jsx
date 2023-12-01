@@ -33,19 +33,19 @@ const Banner = () => {
     <>
      <div className="relative">
      <Swiper
-        // spaceBetween={30}
-        // centeredSlides={true}
-        // autoplay={{
-        //   delay: 4000,
-        //   disableOnInteraction: false,
-        // }}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        // navigation={true}
-        // modules={[Autoplay, Pagination, Navigation]}
-        // onAutoplayTimeLeft={onAutoplayTimeLeft}
-        // className="mySwiper"
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
+        className="mySwiper"
       >
         <SwiperSlide>
           <div className="h-screen  relative">
@@ -120,7 +120,7 @@ const Banner = () => {
         <BannerExtended></BannerExtended>
       </div> */}
       <div >
-{autoplayTime}
+{/* {autoplayTime} */}
       </div>
      </div>
     </>

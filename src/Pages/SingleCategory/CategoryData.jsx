@@ -28,8 +28,14 @@ const CategoryData = ({allcategory}) => {
   .then(res=>{
       if (res.data.insertedId) {
         
-          
- console.log("")
+        Swal.fire({
+          position: "top",
+          icon: "success",
+          title: "Added To Wishlist",
+          showConfirmButton: false,
+          timer: 1500
+        });  
+ 
       }
   })
   
@@ -58,9 +64,9 @@ const CategoryData = ({allcategory}) => {
 
     return (
         <div>
-         <div className="relative flex w-96 h-full flex-col rounded-xl bg-lime-50 bg-clip-border text-gray-700 shadow-lg">
-  <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
-    <img className="h-72 w-full"
+         <div className=" relative flex w-96 md:h-[500px] flex-col rounded-xl  bg-clip-border text-gray-700 shadow-lg">
+  <div className="relative  overflow-hidden text-white shadow-lg rounded-lg bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+    <img className="h-80 w-96"
       src={image}
       alt="ui/ux review check"
     />

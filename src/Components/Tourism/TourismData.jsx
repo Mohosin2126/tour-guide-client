@@ -24,11 +24,11 @@ const TourismData = () => {
           <Tab><h1 className="text-lg font-serif ">Meet Our Tour Guides</h1></Tab>
         </TabList>
         <TabPanel>
-        <div className="card hidden lg:card-side bg-base-100 shadow-xl">
+        <div className="card md:flex hidden  lg:card-side bg-base-100 shadow-xl">
   <div ><OverView></OverView></div>
   <div className="card-body hidden md:block">
     <h2 className="card-title">Dhaka Delights</h2>
-    <p>
+    <p className="text-start mt-3 font-mono">
  {` Dhaka, the bustling capital of Bangladesh, is a city that captivates the taste buds with its diverse and delectable culinary offerings. From the lively streets of Old Dhaka to the fine dining establishments, the city is a paradise for food enthusiasts. Ahsan Manzil, a historical gem, is surrounded by eateries serving iconic Bangladeshi dishes, creating a perfect fusion of history and gastronomy. Bengali street food takes center stage, with aromatic and flavorful delicacies tempting passersby. Dhaka's biryanis, infused with local spices, showcase the city's unique culinary identity. The teeming street markets, such as Kawran Bazar, offer an array of local snacks and sweets, providing a sensory overload of tastes and aromas. Whether savoring traditional sweets, indulging in riverfront dining with a view of the Buriganga River, or exploring the fusion restaurants, Dhaka's culinary landscape is a journey into the heart of Bangladesh's rich and diverse food culture...`}
 </p>
 

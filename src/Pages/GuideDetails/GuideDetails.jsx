@@ -26,13 +26,13 @@ const GuideDetails = () => {
         <div className="hero-content">
           <img src={guides.profilePicture} className="w-1/2 rounded-lg shadow-2xl" />
           <div>
-            <h1 className="text-5xl font-bold"> {guides.name}</h1>
+            <h1 className="text-5xl font-semibold font-serif text-red-50 "> {guides.name}</h1>
 
-            <p className="py-3">Education: {guides?.education?.degree} </p>
-            <p className="py-3">Skill: {guides?.skills?.one} , {guides?.skills?.two} , {guides?.skills?.three}</p>
-            <p className="py-3">Email: {guides?.contactDetails?.email} </p>
-            <p className="py-3">Phone: {guides?.contactDetails?.phone} </p>
-            <p className="py-3">Address: {guides?.contactDetails?.location} </p>
+            <p className="py-3 text-lg font-sans">Education: {guides?.education?.degree} </p>
+            <p className="py-3 text-lg font-sans">Skill: {guides?.skills?.one} , {guides?.skills?.two} , {guides?.skills?.three}</p>
+            <p className="py-3 text-lg font-sans">Email: {guides?.contactDetails?.email} </p>
+            <p className="py-3 text-lg font-sans">Phone: {guides?.contactDetails?.phone} </p>
+            <p className="py-3 text-lg font-sans">Address: {guides?.contactDetails?.location} </p>
           </div>
         </div>
       </div>

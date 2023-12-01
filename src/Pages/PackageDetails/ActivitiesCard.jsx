@@ -5,12 +5,12 @@ const ActivitiesCard = ({activity}) => {
    <div className="ml-10 mt-5">
     <div className="collapse bg-base-200">
   <input type="radio" name="my-accordion-1" /> 
-  <div className="collapse-title text-xl font-medium">
+  <div className="text-green-500 collapse-title text-xl font-medium">
    {title}
   </div>
-  <div className="collapse-content"> 
-    <p>{description}</p>
-    <p>{schedule}</p>
+  <div className="collapse-content space-y-2"> 
+    <p className="text-xl font-serif">{description}</p>
+    <p className="text-base font-medium text-red-800">{schedule}</p>
   </div>
 </div>
    </div>

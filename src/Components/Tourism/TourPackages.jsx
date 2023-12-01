@@ -93,10 +93,10 @@ const {user}=useContext(AuthContext)
   </div>
   <div className="p-6">
     <div className="flex items-center justify-between mb-3">
-      <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+      <h5 className="block font-sans text-xl antialiased font-medium text-white leading-snug tracking-normal text-blue-gray-900">
     {title}
       </h5>
-      <p className="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+      <p className="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-white antialiased">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -113,10 +113,10 @@ const {user}=useContext(AuthContext)
         5.0
       </p>
     </div>
-    <p className="text-start font-serif font-semibold ">
+    <p className="text-start font-serif font-semibold text-white ">
     {category}
     </p>
-   <p className="text-start mt-2 font-semibold ">{price}</p>
+   <p className="text-start mt-2 font-semibold text-white">{price}</p>
   </div>
   <div className="p-6 pt-3">
    <Link to={`/packagedetails/${_id}`}>

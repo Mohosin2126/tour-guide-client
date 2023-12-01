@@ -17,7 +17,7 @@ const SingleCategory = () => {
 
     return (
         <div> 
-<div className="flex flex-wrap gap-4 justify-center">
+<div className="flex md:mt-52 flex-wrap gap-4 justify-center">
 {
     allCategoryType.map(allcategory=><CategoryData allcategory={allcategory} key={allcategory._id}></CategoryData>)
 }

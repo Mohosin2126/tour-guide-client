@@ -28,17 +28,17 @@ console.log(guides)
     <div className="mt-52">
     <div className="ml-10">
        <div>
-       <h1 className="text-start  font-serif text-xl font-bold"> Tour Section</h1>
+       <h1 className="text-start   text-2xl font-serif font-bold"> Tour Section</h1>
         <div className="w-52 bg-red-500 h-1 border rounded-xl">
        </div>
-        <div className="mt-5">
-       <h1>{packages.title}</h1>
-      <h1>{packages.location}</h1>
-      <h2>{packages.price}</h2>
+        <div className="mt-5 space-y-2">
+       <h1 className="text-lg font-serif">{packages.title}</h1 >
+      <h1 className="text-base font-normal">{packages.location}</h1>
+      <h2 className="font-medium text-lg text-green-600">{packages.price}</h2>
      </div>
         </div>
-        <div>
-        <h1 className="text-start  font-serif text-xl font-bold"> Tour Plan</h1>
+        <div className="mt-10">
+        <h1 className="text-start   text-2xl font-serif font-bold"> Tour Plan</h1>
         <div className="w-52 bg-red-500 h-1 border rounded-xl">
        </div>
         </div>
@@ -49,10 +49,10 @@ console.log(guides)
   }
 </div>
     <div className="ml-10 mt-10">
-    <h1 className="text-start  font-serif text-xl font-bold"> Tour Guide</h1>
+    <h1 className="text-start   text-2xl font-serif font-semibold"> Tour Guide</h1>
         <div className="w-52 bg-red-500 h-1 border rounded-xl">
        </div>
-     <div className="grid grid-cols-2 gap-5">
+     <div className=" mt-8 grid grid-cols-2 gap-5">
      {
         guides.map(guide=><ActivitiesGuide guide={guide} key={guide._id}></ActivitiesGuide>)
       }
@@ -60,7 +60,7 @@ console.log(guides)
     </div>
     <div className="ml-10 mt-10">
      <div>
-        <h1 className="text-start  font-serif text-xl font-bold"> Booking Form</h1>
+        <h1 className="text-start   text-2xl font-serif font-semibold"> Booking Form</h1>
         <div className="w-52 bg-red-500 h-1 border rounded-xl">
        </div>
      </div>
