@@ -1,71 +1,76 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import { AuthContext } from "../AuthProvider/AuthProvider";
+import { AuthContext } from "../../Pages/AuthProvider/AuthProvider";
 import useAxiosSecure from "../../Hook/useAxiosSecure";
 
-const CategoryData = ({allcategory}) => {
-    const{_id,image,category,title,price,}=allcategory
 
+const AllPackageCard = ({place}) => {
     const {user}=useContext(AuthContext)
     const navigate=useNavigate()
     const location = useLocation();
     const axiosSecure=useAxiosSecure()
   
-    const handleAddToWishlist=(allcategory)=>{
-      if(user && user.email){
-          //  send cart item to the database 
-          console.log(allcategory)
-  const wishlistItem={
-     categoryId :_id,
-      email:user.email,
-      title,
-      image,
-      price
-  }
-  
-  axiosSecure.post("/wishlist",wishlistItem)
-  .then(res=>{
-      if (res.data.insertedId) {
-        
+      const{_id,image,category,title,price,}=place
+      
+      const handleAddToWishlist=(place)=>{
+        if(user && user.email){
+            //  send cart item to the database 
+            console.log(place)
+    const wishlistItem={
+       categoryId :_id,
+        email:user.email,
+        title,
+        image,
+        price
+    }
+    
+    axiosSecure.post("/wishlist",wishlistItem)
+    .then(res=>{
+        if (res.data.insertedId) {
           
- console.log("")
-      }
-  })
-  
-  
-  
-      }
-      else{
           Swal.fire({
-              title: "You are not Logged In",
-              text: "Please login to add to the cart?",
-              icon: "warning",
-              showCancelButton: true,
-              confirmButtonColor: "#3085d6",
-              cancelButtonColor: "#d33",
-              confirmButtonText: "Yes, login!"
-          }).then((result) => {
-              if (result.isConfirmed) {
-                  //   send the user to the login page
-                  navigate('/login', { state: { from: location } })
-              }
+            position: "top",
+            icon: "success",
+            title: "Added To Wishlist",
+            showConfirmButton: false,
+            timer: 1500
           });
-      }
-  }
-
-
-
+        }
+    })
+    
+    
+    
+        }
+        else{
+            Swal.fire({
+              position:"top",
+                title: "You are not Logged In",
+                text: "Please login to add to the cart?",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, login!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    //   send the user to the login page
+                    navigate('/login', { state: { from: location } })
+                }
+            });
+        }
+    }
     return (
         <div>
-         <div className="relative flex w-96 h-full flex-col rounded-xl bg-lime-50 bg-clip-border text-gray-700 shadow-lg">
-  <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+             <div>
+        <div className="relative flex w-96 flex-col rounded-xl h-full bg-clip-border text-gray-700 shadow-lg">
+  <div className="relative  overflow-hidden text-white shadow-lg rounded-lg bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
     <img className="h-72 w-full"
       src={image}
       alt="ui/ux review check"
     />
     <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
-    <button onClick={()=>handleAddToWishlist(allcategory)}   
+    <button onClick={()=>handleAddToWishlist(place)}   
       className="!absolute top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       type="button"
       data-ripple-dark="true"
@@ -118,9 +123,9 @@ View Package
 </Link>
   </div>
 </div>
-    
+       </div>
         </div>
     );
 };
 
-export default CategoryData;
+export default AllPackageCard;

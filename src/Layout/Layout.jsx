@@ -5,10 +5,14 @@ import Navbar from "../Pages/Shared/Navbar/Navbar";
 const Layout = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
+        <div className=" fixed top-0 z-50">
+          <Navbar />
         </div>
+        <div className="relative ">
+          <Outlet />
+          <Footer />
+        </div>
+      </div>
     );
 };
 

@@ -1,7 +1,59 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { FcGoogle } from 'react-icons/fc'
+import { useContext } from 'react';
+import { AuthContext } from '../AuthProvider/AuthProvider';
+import Swal from 'sweetalert2';
+import useAxiosPublic from '../../Hook/useAxiosPublic';
 
 const Login = () => {
+  const axiosPublic=useAxiosPublic()
+  const {signIn , googleSignIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
+  
+  const handleGoogleSignIn = () =>{
+    googleSignIn()
+    .then(result =>{
+        console.log(result.user);
+        const userInfo = {
+            email: result.user?.email,
+            name: result.user?.displayName,
+            photo: result.user?.photoURL,
+        }
+        axiosPublic.post('/users', userInfo)
+        .then(res =>{
+            console.log(res.data);
+            navigate('/');
+        })
+    })
+}
+    const handleLogin = event => {
+      event.preventDefault();
+      const form = event.target;
+      const email = form.email.value;
+      const password = form.password.value;
+      console.log(email, password);
+      signIn(email, password)
+          .then(result => {
+              const user = result.user;
+              console.log(user);
+              Swal.fire({
+                  title: 'User Login Successful.',
+                  showClass: {
+                      popup: 'animate__animated animate__fadeInDown'
+                  },
+                  hideClass: {
+                      popup: 'animate__animated animate__fadeOutUp'
+                  }
+              });
+              navigate(from, { replace: true });
+          });
+  };
+
+
+
+
   return (
     <div className='flex justify-center items-center min-h-screen'>
       <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900'>
@@ -12,9 +64,7 @@ const Login = () => {
           </p>
         </div>
         <form
-          noValidate=''
-          action=''
-          className='space-y-6 ng-untouched ng-pristine ng-valid'
+        onSubmit={handleLogin}
         >
           <div className='space-y-4'>
             <div>
@@ -70,7 +120,7 @@ const Login = () => {
           </p>
           <div className='flex-1 h-px sm:w-16 dark:bg-gray-700'></div>
         </div>
-        <div className='flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 border-rounded cursor-pointer'>
+        <div onClick={handleGoogleSignIn} className='flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 border-rounded cursor-pointer'>
           <FcGoogle size={32} />
 
           <p>Continue with Google</p>

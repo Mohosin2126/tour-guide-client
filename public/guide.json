@@ -36,8 +36,8 @@
       },
       "skills": {
           "one":  "localHistoryExpertise",
-          "adventureTours":"adventureTours",
-          "communication": "communication"
+          "two":"adventureTours",
+          "three": "communication"
       }
   },
   {
@@ -57,8 +57,8 @@
       },
       "skills": {
         "one": "hospitalityManagement",
-          "culinaryTours": "culinaryTours",
-          "customerService":"customerService"
+          "two": "culinaryTours",
+          "three":"customerService"
       }
   },
   {
@@ -78,8 +78,8 @@
       },
       "skills": {
         "one": "ecotourismManagement",
-          "natureExploration":"natureExploration",
-          "environmentalEducation":"environmentalEducation"
+          "two":"natureExploration",
+          "three":"environmentalEducation"
       }
   },
   {
@@ -99,8 +99,8 @@
       },
       "skills": {
         "one":"artAndCultureTours",
-          "creativeWorkshops":  "creativeWorkshops",
-          "multimediaPresentations":"multimediaPresentations"
+          "two":  "creativeWorkshops",
+          "three":"multimediaPresentations"
       }
   },
   {
@@ -120,8 +120,8 @@
       },
       "skills": {
         "one":  "businessTours",
-          "marketExploration":"marketExploration",
-          "entrepreneurialInsights":  "entrepreneurialInsights"
+          "two":"marketExploration",
+          "three":  "entrepreneurialInsights"
       }
   },
   {
@@ -141,8 +141,8 @@
       },
       "skills": {
         "one":"natureTours",
-          "birdWatching":  "birdWatching",
-          "environmentalInterpretation": "environmentalInterpretation"
+          "two":  "birdWatching",
+          "three": "environmentalInterpretation"
       }
   },
   {
@@ -162,8 +162,8 @@
       },
       "skills": {
         "one": "agriculturalTours",
-          "farmVisits": "farmVisits",
-          "agroTourismDevelopment": "agroTourismDevelopment"
+          "two": "farmVisits",
+          "three": "agroTourismDevelopment"
       }
   }
 ]

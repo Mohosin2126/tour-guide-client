@@ -48,7 +48,7 @@ const Banner = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="h-screen w-screen relative">
+          <div className="h-screen  relative">
             <img className="h-screen w-screen" src="https://i.ibb.co/t4qMpFP/Exploring-Coxs-Bazar.jpg" alt="" />
             <div className="absolute inset-0  mt-48">
              <div data-aos="fade-right">
@@ -69,7 +69,7 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="h-screen w-screen relative">
+        <div className="h-screen  relative">
             <img className="h-screen w-screen" src="https://i.ibb.co/R6MV1MP/4683.jpg" alt="" />
             <div className="absolute inset-0  mt-48">
              <div data-aos="fade-right">
@@ -91,7 +91,7 @@ const Banner = () => {
           {/* <img className="h-screen w-screen" src="https://i.ibb.co/R6MV1MP/4683.jpg" alt="" /> */}
         </SwiperSlide>
         <SwiperSlide>
-        <div className="h-screen w-screen relative">
+        <div className="h-screen  relative">
             <img className="h-screen w-screen" src="https://i.ibb.co/JBcp8Qt/714047.jpg" alt="" />
             <div className="absolute inset-0  mt-48">
              <div data-aos="fade-right">
