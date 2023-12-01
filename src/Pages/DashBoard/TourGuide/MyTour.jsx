@@ -1,14 +1,24 @@
-import useBookings from "../../../../Hook/useBookings";
+import { useQuery } from "@tanstack/react-query";
+import useAxiosSecure from "../../../Hook/useAxiosSecure";
 
-const Booking = () => {
-    const [bookings]=useBookings()
+const MyTour = () => {
+
+    const axiosSecure=useAxiosSecure()
+    const {data:bookings=[],refetch}=useQuery({
+        queryKey:["users"],
+        queryFn:async()=>{
+            const res =await axiosSecure.get("/bookings")
+            return res.data
+    
+        }
+    })
     console.log(bookings)
     return (
         <div>
-        <div>
+             <div>
         <div className="flex justify-evenly my-4">
-            <h2 className="text-3xl">All Booking Packages</h2>
-            <h2 className="text-3xl">Total Booking:{bookings.length} </h2>
+            <h2 className="text-3xl">My Assigned Tour</h2>
+    
         </div>
         <div className="overflow-x-auto">
             <table className="table table-zebra w-full">
@@ -16,14 +26,11 @@ const Booking = () => {
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Name</th>
-                        <th> Guide Name</th>
+                        <th>Package Name</th>
+                        <th> Tourist Name</th>
                         <th>Date</th>
                         <th>Price</th>
                         <th>Status</th>
-                        <th>Action</th>
-                        <th>Action</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -75,4 +82,4 @@ const Booking = () => {
     );
 };
 
-export default Booking;
+export default MyTour;

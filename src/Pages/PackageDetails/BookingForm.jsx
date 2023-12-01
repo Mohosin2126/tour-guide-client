@@ -3,13 +3,14 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
 import useAxiosSecure from "../../Hook/useAxiosSecure";
 import Swal from "sweetalert2";
+import useGuide from "../../Hook/useGuide";
 
 const BookingForm = ({packages}) => {
     const {user}=useContext(AuthContext)
     const navigate=useNavigate()
     const location = useLocation();
     const axiosSecure=useAxiosSecure()
-
+const [guides]=useGuide()
     const handleBookPackage = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -38,6 +39,7 @@ const BookingForm = ({packages}) => {
       tourGuide,
       title:packages.title,
      location: packages.location,
+     status:"In Review"
    
     }
     axiosSecure.post("/bookings",bookingItem)
@@ -134,17 +136,11 @@ const BookingForm = ({packages}) => {
               name="tourguide"
               className="select select-bordered w-full"
             >
-              <option disabled value="default">
-                Select a Tour Guide
-              </option>
-              <option value="saraahmed">Sara Ahmed</option>
-              <option value="rahimkhan">Rahim Khan</option>
-              <option value="aishadrahman">Aishad Rahman</option>
-              <option value="kabirislam">Kabir Islam</option>
-              <option value="nahidchowdhury">Nahid Chowdhury</option>
-              <option value="imranhassan">Imran Hassan</option>
-              <option value="touhidul">Touhidul</option>
-              <option value="farhankhan">Farhan Khan</option>
+
+
+                {
+                    guides.map(guide=><option key={guide._id} value={guide.contactDetails.email}>{guide.name}</option>)
+                }
             </select>
           </div>
         </div>
