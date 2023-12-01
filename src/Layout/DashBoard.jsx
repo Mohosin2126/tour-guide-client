@@ -1,9 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
 import {  FaHome, FaList,  FaShoppingCart, FaUsers, FaUtensils } from "react-icons/fa";
+import useGuideDashboard from "../Hook/useGuideDashboard";
+import useAdmin from "../Hook/useAdmin";
 
 const DashBoard = () => {
-   const isAdmin=true
-   const isTourGuide=false
+   const [isAdmin]=useAdmin()
+   const [isGuide]=useGuideDashboard()
 
     return (
         <div className="flex">
@@ -30,7 +32,7 @@ const DashBoard = () => {
                             </li>
                        
                         </>
-                            :isTourGuide ? (
+                            :isGuide ? (
                                 <>
                                     <li>
                                         <NavLink to="/dashboard/myprofile">
