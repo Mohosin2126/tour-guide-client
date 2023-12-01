@@ -30,7 +30,7 @@ const Navbar = () => {
   );
 
   return (
-    <div  className="navbar justify-between md:justify-normal md:space-x-[300px] gap-36 h-28 mb-4">
+    <div  className="navbar justify-between md:justify-normal md:gap-60 gap-36 h-28 mb-4">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -56,15 +56,23 @@ const Navbar = () => {
         <div className="dropdown dropdown-bottom flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img alt="Tailwind CSS Navbar component" src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            {
+          user ?<img src={user?.photoURL}
+          /> :<img src="https://i.ibb.co/Xb7MwCk/placeholder.jpg"/>
+        }
             </div>
           </label>
-          <ul tabIndex={0} className=" mt-3 z-[1]  shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+          <ul tabIndex={0} className=" mt-3 z-[1]  text-start shadow menu menu-lg dropdown-content bg-base-100 rounded-box w-48">
+          <Link to={"/dashboard"}><li >Dashboard</li></Link>
             <li>
-              <h1>name</h1>
+              {
+               user? <h1 >{user?.displayName}</h1>:<h1  >Your Name</h1>
+              }
             </li>
-            <li><h1>email</h1></li>
-            <Link to={"/dashboard"}><li>Dashboard</li></Link>
+            {
+               user? <h1 >{user?.email}</h1>:<h1 >Your Email</h1>
+              }
+            
           </ul>
         </div>
       </div>
