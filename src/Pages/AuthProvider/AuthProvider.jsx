@@ -60,10 +60,6 @@ const googleSignIn = () => {
     return signInWithPopup(auth, googleProvider);
 }
 
-
-
-
-
 const authInfo={
 user,
 loading ,
