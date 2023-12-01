@@ -33,31 +33,31 @@ const Banner = () => {
     <>
      <div className="relative">
      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
+        // spaceBetween={30}
+        // centeredSlides={true}
+        // autoplay={{
+        //   delay: 4000,
+        //   disableOnInteraction: false,
+        // }}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        // navigation={true}
+        // modules={[Autoplay, Pagination, Navigation]}
+        // onAutoplayTimeLeft={onAutoplayTimeLeft}
+        // className="mySwiper"
       >
         <SwiperSlide>
           <div className="h-screen  relative">
             <img className="h-screen w-screen" src="https://i.ibb.co/t4qMpFP/Exploring-Coxs-Bazar.jpg" alt="" />
-            <div className="absolute inset-0  mt-48">
+            <div className="absolute inset-0 mt-56 md:mt-48">
              <div data-aos="fade-right">
-             <h1 className="text-center font-serif font-extrabold text-4xl text-white">Your Gateway to Extraordinary Travel 
+             <h1 className="text-center font-serif md:font-extrabold md:text-4xl text-2xl text-white">Your Gateway to Extraordinary Travel 
               </h1>
              </div>
               <div data-aos="fade-left">
-              <p className="text-center mt-2 font-semibold text-base text-stone-300">Welcome to Your Gateway to Extraordinary Travel, where every journey is a carefully curated experience crafted just for you. <br />Embark on a seamless adventure as our expert tour guides lead you through captivating destinations, unveiling hidden gems and cultural treasures</p>
-              <button className=" mt-5 flex mx-auto bg-transparent hover:bg-red-600 text-red-600 font-serif font-semibold hover:text-white py-2 px-4 border  hover:border-transparent rounded">
+              <p className="text-center mt-2 md:font-semibold md:text-base text-sm text-stone-300">Welcome to Your Gateway to Extraordinary Travel, where every journey is a carefully curated experience crafted just for you. <br />Embark on a seamless adventure as our expert tour guides lead you through captivating destinations, unveiling hidden gems and cultural treasures</p>
+              <button className=" mt-5 flex mx-auto bg-transparent hover:bg-red-600 text-red-600 font-serif font-semibold hover:text-white py-1 md:py-2 px-2 md:px-4 border  hover:border-transparent rounded">
  Continue Reading 
 </button>
               </div>
@@ -71,16 +71,17 @@ const Banner = () => {
         <SwiperSlide>
         <div className="h-screen  relative">
             <img className="h-screen w-screen" src="https://i.ibb.co/R6MV1MP/4683.jpg" alt="" />
-            <div className="absolute inset-0  mt-48">
+            <div className="absolute inset-0 mt-56 md:mt-48">
              <div data-aos="fade-right">
-             <h1 className="text-center font-serif font-extrabold text-4xl text-white">Your Gateway to Extraordinary Travel 
+             <h1 className="text-center font-serif md:font-extrabold md:text-4xl text-2xl text-white">Your Gateway to Extraordinary Travel 
               </h1>
              </div>
               <div data-aos="fade-left">
-              <p className="text-center mt-2 font-semibold text-base text-stone-300">Welcome to Your Gateway to Extraordinary Travel, where every journey is a carefully curated experience crafted just for you. <br />Embark on a seamless adventure as our expert tour guides lead you through captivating destinations, unveiling hidden gems and cultural treasures</p>
-              <button className=" mt-5 flex mx-auto bg-transparent hover:bg-red-600 text-red-600 font-serif font-semibold hover:text-white py-2 px-4 border  hover:border-transparent rounded">
+              <p className="text-center mt-2 md:font-semibold md:text-base text-sm text-stone-300">Welcome to Your Gateway to Extraordinary Travel, where every journey is a carefully curated experience crafted just for you. <br />Embark on a seamless adventure as our expert tour guides lead you through captivating destinations, unveiling hidden gems and cultural treasures</p>
+              <button className=" mt-5 flex mx-auto bg-transparent hover:bg-red-600 text-red-600 font-serif font-semibold hover:text-white py-1 md:py-2 px-2 md:px-4 border  hover:border-transparent rounded">
  Continue Reading 
 </button>
+           
               </div>
             
              <div>
@@ -93,16 +94,17 @@ const Banner = () => {
         <SwiperSlide>
         <div className="h-screen  relative">
             <img className="h-screen w-screen" src="https://i.ibb.co/JBcp8Qt/714047.jpg" alt="" />
-            <div className="absolute inset-0  mt-48">
+            <div className="absolute inset-0 mt-56 md:mt-48">
              <div data-aos="fade-right">
-             <h1 className="text-center font-serif font-extrabold text-4xl text-white">Your Gateway to Extraordinary Travel 
+             <h1 className="text-center font-serif md:font-extrabold md:text-4xl text-2xl text-white">Your Gateway to Extraordinary Travel 
               </h1>
              </div>
               <div data-aos="fade-left">
-              <p className="text-center mt-2 font-semibold text-base text-stone-300">Welcome to Your Gateway to Extraordinary Travel, where every journey is a carefully curated experience crafted just for you. <br />Embark on a seamless adventure as our expert tour guides lead you through captivating destinations, unveiling hidden gems and cultural treasures</p>
-              <button className=" mt-5 flex mx-auto bg-transparent hover:bg-red-600 text-red-600 font-serif font-semibold hover:text-white py-2 px-4 border  hover:border-transparent rounded">
+              <p className="text-center mt-2 md:font-semibold md:text-base text-sm text-stone-300">Welcome to Your Gateway to Extraordinary Travel, where every journey is a carefully curated experience crafted just for you. <br />Embark on a seamless adventure as our expert tour guides lead you through captivating destinations, unveiling hidden gems and cultural treasures</p>
+              <button className=" mt-5 flex mx-auto bg-transparent hover:bg-red-600 text-red-600 font-serif font-semibold hover:text-white py-1 md:py-2 px-2 md:px-4 border  hover:border-transparent rounded">
  Continue Reading 
 </button>
+           
               </div>
             
              <div>

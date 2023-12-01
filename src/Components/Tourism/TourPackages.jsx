@@ -66,9 +66,9 @@ const {user}=useContext(AuthContext)
 
     return (
        <div>
-        <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl  bg-clip-border text-gray-700 shadow-lg">
+        <div className="relative flex w-96 h-full mx-auto flex-col rounded-xl  bg-clip-border text-gray-700 shadow-lg">
   <div className="relative  overflow-hidden text-white shadow-lg rounded-lg bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
-    <img className="h-48 w-96"
+    <img className="h-48 w-full"
       src={image}
       alt="ui/ux review check"
     />

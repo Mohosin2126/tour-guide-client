@@ -12,8 +12,8 @@ const TourType = () => {
     console.log(categories)
     return (
         <div className="mt-10">
-            <h1 className="font-serif text-center  font-bold text-3xl">Tour Type</h1>
-            <p className="text-center font-semibold">Everything You Want Is Here</p>
+            <h1 className="text-center font-serif text-3xl text-extrabold mt-10">Tour Type</h1>
+            <p className="text-center mt-2 font-serif  text-base">Everything You Want Is Here</p>
             <div  className="mt-10">
                 <Swiper
                     effect={'coverflow'}
