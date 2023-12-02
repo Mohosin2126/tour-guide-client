@@ -1,8 +1,37 @@
+import Swal from "sweetalert2";
 import useBookings from "../../../../Hook/useBookings";
+import useAxiosSecure from "../../../../Hook/useAxiosSecure";
 
 const Booking = () => {
-    const [bookings]=useBookings()
-    console.log(bookings)
+    const [bookings,refetch]=useBookings()
+    const axiosSecure=useAxiosSecure()
+    const handleCancel=(id)=>{
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Cancel it!"
+        }) .then((result) => {
+            if (result.isConfirmed) {
+    
+                axiosSecure.delete(`/guidebookings/${id}`)
+                    .then(res => {
+                        if (res.data.deletedCount > 0) {
+                            refetch();
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your file has been deleted.",
+                                icon: "success"
+                            });
+                        }
+                    })
+            }
+        });
+    }
     return (
         <div>
         <div>
@@ -27,47 +56,32 @@ const Booking = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {
-                        bookings.map((booking, index) =><tr key={booking._id}>
-                            <th>{index + 1}</th>
-                            
-                            <td>
-                            {booking?.touristName}
-                        </td>
-                       
-                            <td>
-                            {booking?.tourGuide}
-                        </td>
-                       
-                            <td>
-                            {booking?.tourDate}
-                        </td>
-                       
-                            <td>
-                            {booking?.price}
-                        </td>
-                       
-                            <td>
-                            {booking?.status}
-                        </td>
-                       
-                            <td>
-                         pay
-                        </td>
-                       
-                            <td>
-                            cancel
-                        </td>
-                       
-                            <td>
-                           apply
-                        </td>
-                       
-                            
-                        </tr>)
-                    }
+  {bookings.map((booking, index) => (
+    <tr key={booking._id}>
 
-                </tbody>
+      <th>{index + 1}</th>
+      <td>{booking?.touristName}</td>
+      <td>{booking?.tourGuide}</td>
+      <td>{booking?.tourDate}</td>
+      <td>{booking?.price}</td>
+      <td>{booking?.status}</td>
+      <td>
+        {booking.status === "Accepted" ? (
+          <button className=" btn btn-success">Pay</button>
+        ) : (
+          <button className="disable ">Pay</button>
+        )}
+      </td>
+      <td>{booking.status === "In Review" ? (
+          <button onClick={()=>handleCancel(booking._id)} className=" btn btn-success">Cancel</button>
+        ) : (
+          <button className="disable ">Cancel</button>
+        )}</td>
+      <td>Apply</td>
+    </tr>
+  ))}
+</tbody>
+
             </table>
         </div>
     </div>
