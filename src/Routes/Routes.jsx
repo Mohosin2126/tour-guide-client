@@ -18,6 +18,7 @@ import AllPackages from "../Components/Tourism/AllPackages";
 import TouristStoryDetails from "../Components/TouristStory/TouristStoryDetails";
 import MyTour from "../Pages/DashBoard/TourGuide/MyTour";
 import AllStory from "../Components/TouristStory/AllStory";
+import MyProfile from "../Pages/DashBoard/Tourist/MyProfile/MyProfile";
 
 export const router = createBrowserRouter([
   {
@@ -80,7 +81,11 @@ export const router = createBrowserRouter([
         },
         {
           path:"/dashboard/myassignedtour",
-          element:<MyTour></MyTour>
+          element:<MyTour></MyTour>,
+        },
+        {
+          path:"/dashboard/myprofile",
+          element:<MyProfile></MyProfile>,
         }
       
     ]
