@@ -1,6 +1,7 @@
 import { useEffect } from "react";
+import { useContext } from "react";
 import { useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useLocation, useNavigate, useParams } from "react-router-dom";
 import {
   FacebookIcon,
   FacebookShareButton,
@@ -8,19 +9,43 @@ import {
   WhatsappShareButton,
   
 } from "react-share";
+import { AuthContext } from "../../Pages/AuthProvider/AuthProvider";
 const TouristStoryDetails = () => {
     // const {_id,name,age,nationality,gender,trip_destination,trip_activities,accommodation,experience_description,image_url,place_image_url,short_description,trip_title}=story
     const [details, setDetails] = useState({});
-    const allStories = useLoaderData()
-    const { id } = useParams();
-    useEffect(() => {
-      
-      const findStories =allStories?.find((story) => story._id == id);
-      
-      setDetails(findStories || {});
-    }, [allStories, id]);
-    const shareUrl = "https://www.facebook.com/";
- const whatsAppUrl="https://web.whatsapp.com/"
+  const allStories = useLoaderData();
+  const { id } = useParams();
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+ 
+
+  const handleFacebook = () => {
+    if (!user || !user.email) {
+      // User is not logged in, redirect to login page
+      console.log("User not logged in. Redirecting to login page.");
+      navigate('/login', { state: { from: location } });
+      return null; // Prevent rendering the rest of the component
+    }
+  };
+
+  const handleWhatsApp = () => {
+    if (!user || !user.email) {
+      // User is not logged in, redirect to login page
+      console.log("User not logged in. Redirecting to login page.");
+      navigate('/login', { state: { from: location } });
+      return null; // Prevent rendering the rest of the component
+    }
+  };
+
+  const shareUrl = "https://www.facebook.com/";
+  const whatsAppUrl = "https://web.whatsapp.com/";
+
+  useEffect(() => {
+    const findStories = allStories?.find((story) => story._id == id);
+    setDetails(findStories || {});
+  }, [allStories, id]);
+
   
 
     return (
@@ -59,14 +84,17 @@ const TouristStoryDetails = () => {
 
           </figcaption>
         <div className="flex gap-5 justify-around">
-        <FacebookShareButton
+     <button onClick={handleFacebook} >
+     <FacebookShareButton
           url={shareUrl}
           className="Demo__some-network__share-button"
         >
           <FacebookIcon size={42} round />
           <p>Facebook</p>
         </FacebookShareButton>
-        <WhatsappShareButton
+     </button>
+      <button onClick={handleWhatsApp} >
+      <WhatsappShareButton
           url={whatsAppUrl}
           separator=":: "
           className="Demo__some-network__share-button"
@@ -74,6 +102,7 @@ const TouristStoryDetails = () => {
           <WhatsappIcon size={42} round />
           <p>WhatsApp</p>
         </WhatsappShareButton>
+      </button>
         </div>
 </div>
         

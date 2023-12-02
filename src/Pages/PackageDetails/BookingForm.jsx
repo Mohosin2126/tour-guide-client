@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAxiosSecure from "../../Hook/useAxiosSecure";
 import Swal from "sweetalert2";
 import useGuide from "../../Hook/useGuide";
@@ -11,75 +11,75 @@ const BookingForm = ({packages}) => {
     const location = useLocation();
     const axiosSecure=useAxiosSecure()
 const [guides]=useGuide()
-    const handleBookPackage = (e) => {
-        e.preventDefault();
-        const form = e.target;
-        const touristName = form.touristname.value;
-        const touristEmail = user?.email;
-        const touristImage = form.touristimage.value;
-        const price = form.price.value;
-        const tourDate = form.date.value;
-        const tourGuide = form.tourguide.value;  
-        // console.log("Tourist Name:", touristName);
-        // console.log("Tourist Email:", touristEmail);
-        // console.log("Tourist Image:", touristImage);
-        // console.log("Price:", price);
-        // console.log("Tour Date:", tourDate);
-        // console.log("Tour Guide:", tourGuide);
- 
-        if(user && user.email){
-            //  send cart item to the database 
-    const bookingItem={
-        email:user.email,
-        touristName ,
+const handleBookPackage = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const touristName = form.touristname.value;
+    const touristEmail = user?.email;
+    const touristImage = form.touristimage.value;
+    const price = form.price.value;
+    const tourDate = form.date.value;
+    const tourGuide = form.tourguide.value;
+  
+    if (user && user.email) {
+      // send cart item to the database
+      const bookingItem = {
+        email: user.email,
+        touristName,
         touristEmail,
-      touristImage,
-      price,
-      tourDate,
-      tourGuide,
-      title:packages.title,
-     location: packages.location,
-     status:"In Review"
-   
-    }
-    axiosSecure.post("/bookings",bookingItem)
-    .then(res=>{
-        if (res.data.insertedId) {
-          
-            
-            Swal.fire({
-                position: "top",
-                icon: "success",
-                title: "Added to Your Booking List",
-                showConfirmButton: false,
-                timer: 1500
-              });
-        }
-    })
-    
-    
-    
-        }
-        else{
-            Swal.fire({
-                title: "You are not Logged In",
-                text: "Please login ",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "Yes, login!"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    //   send the user to the login page
-                    navigate('/login', { state: { from: location } })
-                }
-            });
-        }
-
-
-
+        touristImage,
+        price,
+        tourDate,
+        tourGuide,
+        title: packages.title,
+        location: packages.location,
+        status: "In Review"
       };
+  
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You Want To Book ",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, Book It !"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          axiosSecure.post("/bookings", bookingItem).then((res) => {
+            if (res.data.insertedId) {
+                Swal.fire({
+                    position: 'top',
+                    icon: 'success',
+                    title: 'Added to Your Booking List',
+                    showConfirmButton: false,
+                    timer: 4500,
+                    htmlContainer: `${<Link to={"/dashboard/mybookings"}><li>Your Bookings</li></Link>}`
+                  });
+                  
+                  
+            }
+          });
+        }
+      });
+    } else {
+      Swal.fire({
+        title: "You are not Logged In",
+        text: "Please login ",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, login!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // send the user to the login page
+          navigate('/login', { state: { from: location } });
+        }
+      });
+    }
+  };
+  
     return (
         <div className="mt-5">
            <form onSubmit={handleBookPackage} >
