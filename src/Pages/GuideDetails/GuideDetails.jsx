@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useLocation, useNavigate, useParams } from "react-router-dom";
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
+import Swal from "sweetalert2";
+import { useContext } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const GuideDetails = () => {
   const [rating, setRating] = useState(0);
@@ -10,9 +13,30 @@ const GuideDetails = () => {
   const { id } = useParams();
 
   const [inputField, setInputField] = useState("");
-
+const {user}=useContext(AuthContext)
+const navigate=useNavigate()
+const location=useLocation()
   const handleInputField = () => {
-    console.log("Textarea Value:", inputField);
+    if(user && user.email){
+    console.log(inputField)
+  }
+  else{
+      Swal.fire({
+        position:"top",
+          title: "You are not Logged In",
+          text: "Please login to add to the cart?",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, login!"
+      }).then((result) => {
+          if (result.isConfirmed) {
+              //   send the user to the login page
+              navigate('/login', { state: { from: location } })
+          }
+      });
+  }
   };
 
   useEffect(() => {
