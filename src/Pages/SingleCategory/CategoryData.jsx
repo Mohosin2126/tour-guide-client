@@ -91,7 +91,7 @@ const CategoryData = ({allcategory}) => {
   </div>
   <div className="p-6">
     <div className="flex items-center justify-between mb-3">
-      <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+      <h5 className="block font-sans text-xl text-white antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
     {title}
       </h5>
       <p className="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
@@ -111,10 +111,10 @@ const CategoryData = ({allcategory}) => {
         5.0
       </p>
     </div>
-    <p className="text-start font-serif font-semibold ">
+    <p className="text-start font-serif text-white font-lg ">
     {category}
     </p>
-   <p className="text-start mt-2 font-semibold ">{price}</p>
+   <p className="text-start mt-2 font-semibold text-red-800">{price}</p>
   </div>
   <div className="p-6 pt-3">
    <Link to={`/packagedetails/${_id}`}>

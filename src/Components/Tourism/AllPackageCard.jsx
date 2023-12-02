@@ -90,10 +90,10 @@ const AllPackageCard = ({place}) => {
   </div>
   <div className="p-6">
     <div className="flex items-center justify-between mb-3">
-      <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+      <h5 className="block font-sans text-white text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
     {title}
       </h5>
-      <p className="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+      <p className="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-white text-blue-gray-900 antialiased">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -110,10 +110,10 @@ const AllPackageCard = ({place}) => {
         5.0
       </p>
     </div>
-    <p className="text-start font-serif font-semibold ">
+    <p className="text-start text-white font-serif font-lg ">
     {category}
     </p>
-   <p className="text-start mt-2 font-semibold ">{price}</p>
+   <p className="text-start mt-2 font-semibold text-red-800">{price}</p>
   </div>
   <div className="p-6 pt-3">
    <Link to={`/packagedetails/${_id}`}>

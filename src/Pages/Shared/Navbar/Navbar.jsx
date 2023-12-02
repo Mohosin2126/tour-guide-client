@@ -53,29 +53,50 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <div className="dropdown dropdown-bottom flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-            {
-          user ?<img src={user?.photoURL}
-          /> :<img src="https://i.ibb.co/Xb7MwCk/placeholder.jpg"/>
-        }
-            </div>
-          </label>
-          <ul tabIndex={0} className=" mt-3 z-[1]  text-start shadow menu menu-lg dropdown-content bg-base-100 rounded-box w-48">
-          <Link to={"/dashboard"}><li >Dashboard</li></Link>
-            <li>
-              {
-               user? <h1 >{user?.displayName}</h1>:<h1  >Your Name</h1>
-              }
-            </li>
-            {
-               user? <h1 >{user?.email}</h1>:<h1 >Your Email</h1>
-              }
-            
-          </ul>
-        </div>
+  <div className="dropdown dropdown-bottom flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+      <div className="w-10 rounded-full">
+        {user ? (
+          <img src={user?.photoURL} />
+        ) : (
+          <img src="https://i.ibb.co/Xb7MwCk/placeholder.jpg" />
+        )}
       </div>
+    </label>
+    <ul
+      tabIndex={0}
+      className="mt-3 z-[1] text-start shadow menu menu-lg dropdown-content bg-base-100 rounded-box w-48"
+    >
+      <Link to={"/dashboard"}>
+        <li  className="font-base text-center text-base">Dashboard</li>
+      </Link>
+      <li  className="font-base text-center text-base">Offer Announcements</li>
+      <li>
+        <h1 className="font-base text-base">
+          {user ? user?.displayName : "Your Name"}
+        </h1>
+      </li>
+      <li>
+        <h1  className="font-base text-base">
+          {user ? user?.email : "Your Email"}
+        </h1>
+      </li>
+      {user ? (
+        <button
+          onClick={handleLogOut}
+          className="font-base text-base"
+        >
+          LogOut
+        </button>
+      ) : (
+        <li  className="font-base text-base">
+          <Link to="/login">Login</Link>
+        </li>
+      )}
+    </ul>
+  </div>
+</div>
+
     </div>
   );
 };

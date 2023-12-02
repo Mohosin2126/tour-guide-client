@@ -113,10 +113,10 @@ const {user}=useContext(AuthContext)
         5.0
       </p>
     </div>
-    <p className="text-start font-serif font-semibold text-white ">
+    <p className="text-start font-serif font-lg bold text-white ">
     {category}
     </p>
-   <p className="text-start mt-2 font-semibold text-white">{price}</p>
+   <p className="text-start mt-2 font-semibold text-red-800">{price}</p>
   </div>
   <div className="p-6 pt-3">
    <Link to={`/packagedetails/${_id}`}>

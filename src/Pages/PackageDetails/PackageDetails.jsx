@@ -34,7 +34,7 @@ console.log(guides)
         <div className="mt-5 space-y-2">
        <h1 className="text-lg font-serif">{packages.title}</h1 >
       <h1 className="text-base font-normal">{packages.location}</h1>
-      <h2 className="font-medium text-lg text-green-600">{packages.price}</h2>
+      <h2 className="font-medium text-lg text-red-800">{packages.price}</h2>
      </div>
         </div>
         <div className="mt-10">
