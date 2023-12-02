@@ -17,6 +17,7 @@ import AllUsers from "../Pages/DashBoard/Admin/AllUsers/AllUsers";
 import AllPackages from "../Components/Tourism/AllPackages";
 import TouristStoryDetails from "../Components/TouristStory/TouristStoryDetails";
 import MyTour from "../Pages/DashBoard/TourGuide/MyTour";
+import AllStory from "../Components/TouristStory/AllStory";
 
 export const router = createBrowserRouter([
   {
@@ -52,7 +53,10 @@ export const router = createBrowserRouter([
         element: <TouristStoryDetails></TouristStoryDetails>,
         loader: () => fetch("http://localhost:5000/story"),
       },
-     
+     {
+      path:"/allstories",
+      element:<AllStory></AllStory>,
+     }
     ]
   },
   { path: '/login', element:<Login></Login> },
