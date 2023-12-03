@@ -4,6 +4,7 @@ import useAxiosSecure from "../../../../Hook/useAxiosSecure";
 import Swal from "sweetalert2";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
 const AllUsers = () => {
 
     const axiosSecure=useAxiosSecure()
@@ -18,9 +19,19 @@ const AllUsers = () => {
 
     const [isUpdating, setIsUpdating] = useState(false);
 
+    useEffect(() => {
+        // Check localStorage for the stored isUpdating state
+        const storedIsUpdating = localStorage.getItem('isUpdating');
+        if (storedIsUpdating) {
+          setIsUpdating(JSON.parse(storedIsUpdating));
+        }
+      }, []);
+
+  
+  
+
 
     const handleMakeAdmin = user =>{
-        setIsUpdating(true);
         axiosSecure.patch(`/users/admin/${user._id}`)
         .then(res =>{
             console.log(res.data)
@@ -35,12 +46,12 @@ const AllUsers = () => {
                   });
             }
         })
-        // enable the button 
-        // .finally(() => setIsUpdating(false));
+        setIsUpdating(true);
+        localStorage.setItem('isUpdating', JSON.stringify(true));
     }
     
     const handleMakeTourGuide = (user) => {
-        setIsUpdating(true);
+    
         axiosSecure.patch(`/users/guide/${user._id}`)
           .then((res) => {
             console.log(res.data);
@@ -71,6 +82,8 @@ const AllUsers = () => {
           .catch((error) => {
             console.error("Error updating user to guide:", error);
           });
+          setIsUpdating(true);
+          localStorage.setItem('isUpdating', JSON.stringify(true));
       };
       
 
@@ -95,36 +108,43 @@ const AllUsers = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {
-                        users.map((user, index) => <tr key={user._id}>
-                            <th>{index + 1}</th>
-                            <td>{user.name}</td>
-                            <td>{user.email}</td>
-                            <td>
-                            {user.role === "guide" ? "guide" : (
-                                <button
-                                    onClick={() => handleMakeTourGuide(user)}
-                                    className={`btn btn-ghost btn-sm bg-gray-400 ${isUpdating ? 'disabled' : ''}`}
-                                    disabled={isUpdating}
-                                >
-                                    <FaUsers className="text-white text-2xl" />
-                                </button>
-                            )}
-                        </td>
-                        <td>
-                            {user.role === 'admin' ? 'Admin' : (
-                                <button
-                                    onClick={() => handleMakeAdmin(user)}
-                                    className={`btn btn-sm bg-red-600 ${isUpdating ? 'disabled' : ''}`}
-                                    disabled={isUpdating}
-                                >
-                                    <FaUsers className="text-white text-2xl" />
-                                </button>
-                            )}
-                            </td>
-                            
-                        </tr>)
-                    }
+                {users.map((user, index) => (
+      <tr key={user._id}>
+        <th>{index + 1}</th>
+        <td>{user.name}</td>
+        <td>{user.email}</td>
+        <td>
+          {user.role === "guide" ? (
+            "guide"
+          ) : (
+            <button
+              onClick={() => handleMakeTourGuide(user)}
+              className={`btn btn-ghost btn-sm bg-gray-400 ${
+                user.role === "Admin" ? "disabled" : ''
+              }`}
+              disabled={isUpdating}
+            >
+              <FaUsers className="text-white text-2xl" />
+            </button>
+          )}
+        </td>
+        <td>
+          {user.role === 'admin' ? (
+            'Admin'
+          ) : (
+            <button
+              onClick={() => handleMakeAdmin(user)}
+              className={`btn btn-sm bg-red-600 ${
+                user.role === "guide" ? "disabled" : ''
+              }`}
+              disabled={isUpdating}
+            >
+              <FaUsers className="text-white text-2xl" />
+            </button>
+          )}
+        </td>
+      </tr>
+    ))}
 
                 </tbody>
             </table>

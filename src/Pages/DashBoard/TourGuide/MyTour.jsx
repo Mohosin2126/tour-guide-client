@@ -97,8 +97,8 @@ const MyTour = () => {
                         </td>
                        
                         <td>
-  {booking.status === "Accepted" || booking.status === "Rejected" ? (
-    <button className="btn btn-outline disabled btn-success btn-sm">Accept</button>
+  {booking.status == "Accepted" || booking.status == "Rejected" ? (
+    <button className="btn btn-outline disabled btn-success btn-sm">{booking.status=="Accepted"?<h1>Accepted</h1>:<h1>Accept</h1>}</button>
   ) : (
     <button
       className="btn btn-outline btn-success btn-sm"
@@ -109,8 +109,8 @@ const MyTour = () => {
   )}
 </td>
 <td>
-  {booking.status === "Accepted" || booking.status === "Rejected" ? (
-    <button className="btn disabled  btn-outline btn-error btn-sm">Reject</button>
+  {booking.status == "Accepted" || booking.status == "Rejected" ? (
+    <button className="btn disabled  btn-outline btn-error btn-sm">{booking.status=="Rejected"?<h1>Rejected</h1>:<h1>Reject</h1>}</button>
   ) : (
     <button
       className="btn btn-outline btn-error btn-sm"
