@@ -10,6 +10,7 @@ const SignUp = () => {
     const { createUser,updateUserProfile,googleSignIn }=useContext(AuthContext)
     const location = useLocation();
     const navigate = useNavigate();
+    const from = location.state?.from?.pathname || "/";
     const handleGoogleSignIn = () =>{
       googleSignIn()
       .then(result =>{
@@ -59,7 +60,7 @@ const SignUp = () => {
                 showConfirmButton: false,
                 timer: 1500
             });
-            navigate('/');
+            navigate(from, { replace: true });
         }
        })
   
