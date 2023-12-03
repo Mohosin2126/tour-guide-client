@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../../../Hook/useAxiosSecure";
 import { useContext } from "react";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
-import Profile from "./Profile";
+
 
 const MyProfile = () => {
     const {user}=useContext(AuthContext)
@@ -20,6 +20,7 @@ const MyProfile = () => {
     console.log(userData)
     return (
         <div>
+            <h1>My Profile</h1>
            <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
       <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-80">
         <img src={userData?.photo} className="w-full h-52" alt="profile-picture" />
