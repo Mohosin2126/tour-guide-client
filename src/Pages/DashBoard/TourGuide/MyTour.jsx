@@ -17,6 +17,7 @@ const MyTour = () => {
     
         }
     })
+    console.log(bookings)
     const handleAccept =(id) =>{
         axiosSecure.patch(`/guidebookings/accept/${id}`)
         .then(res =>{
@@ -24,7 +25,7 @@ const MyTour = () => {
             if(res.data.modifiedCount > 0){
                 refetch();
                 Swal.fire({
-                    position: "top-end",
+                    position: "top",
                     icon: "success",
                     title: "Request Accepted",
                     showConfirmButton: false,
@@ -44,7 +45,7 @@ const MyTour = () => {
             if(res.data.modifiedCount > 0){
                 refetch();
                 Swal.fire({
-                    position: "top-end",
+                    position: "top",
                     icon: "success",
                     title: "Request Rejected",
                     showConfirmButton: false,
@@ -80,23 +81,48 @@ const MyTour = () => {
                         bookings?.map((booking, index) =><tr key={booking._id}>
                             <th>{index + 1}</th>
                             
-                            <td>
+                            <td className="font-base uppercase text-teal-500">
                             {booking?.title}
                         </td>
                         
-                        <td>
+                        <td className="font-medium from-stone-100 uppercase">
                             {booking?.touristName}
                         </td>
-                            <td>
+                            <td className="font-medium text-blue-700">
                             {booking?.tourDate}
                         </td>
                        
-                            <td>
+                            <td className="font-medium text-orange-600">
                             {booking?.price}
                         </td>
                        
-                           <td><button onClick={()=>handleAccept(booking._id)}>Accept</button></td>
-                           <td><button onClick={()=>handleReject(booking._id)}>Reject</button></td>
+                        <td>
+  {booking.status === "Accepted" || booking.status === "Rejected" ? (
+    <button className="btn btn-outline disabled btn-success btn-sm">Accept</button>
+  ) : (
+    <button
+      className="btn btn-outline btn-success btn-sm"
+      onClick={() => handleAccept(booking._id)}
+    >
+      Accept
+    </button>
+  )}
+</td>
+<td>
+  {booking.status === "Accepted" || booking.status === "Rejected" ? (
+    <button className="btn disabled  btn-outline btn-error btn-sm">Reject</button>
+  ) : (
+    <button
+      className="btn btn-outline btn-error btn-sm"
+      onClick={() => handleReject(booking._id)}
+    >
+      Reject
+    </button>
+  )}
+</td>
+
+                            
+                           
                        
     
                         </tr>)

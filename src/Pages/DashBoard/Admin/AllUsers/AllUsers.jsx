@@ -87,7 +87,7 @@ const handleMakeTourGuide=user=>{
                             {user.role === "guide" ? "guide" : (
                                 <button
                                     onClick={() => handleMakeTourGuide(user)}
-                                    className={`btn btn-ghost btn-lg bg-gray-400 ${isUpdating ? 'disabled' : ''}`}
+                                    className={`btn btn-ghost btn-sm bg-gray-400 ${isUpdating ? 'disabled' : ''}`}
                                     disabled={isUpdating}
                                 >
                                     <FaUsers className="text-white text-2xl" />
@@ -98,7 +98,7 @@ const handleMakeTourGuide=user=>{
                             {user.role === 'admin' ? 'Admin' : (
                                 <button
                                     onClick={() => handleMakeAdmin(user)}
-                                    className={`btn btn-lg bg-red-600 ${isUpdating ? 'disabled' : ''}`}
+                                    className={`btn btn-sm bg-red-600 ${isUpdating ? 'disabled' : ''}`}
                                     disabled={isUpdating}
                                 >
                                     <FaUsers className="text-white text-2xl" />

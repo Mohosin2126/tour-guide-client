@@ -4,6 +4,7 @@ import ActivitiesCard from "./ActivitiesCard";
 import useGuide from "../../Hook/useGuide";
 import ActivitiesGuide from "./ActivitiesGuide";
 import BookingForm from "./BookingForm";
+import Gallery from "./Gallery";
 
 
 const PackageDetails = () => {
@@ -21,12 +22,17 @@ console.log(guides)
     
     setPackages(findPackage || {});
   }, [allPackages, id]);
- console.log(packages.activities)
+ console.log(packages?.gallery)
 
 
   return (
-    <div className="mt-52">
-    <div className="ml-10">
+    <div >
+      <div>
+{
+  packages?.gallery?.map(item=><Gallery item={item} key={item.id}></Gallery>)
+}
+      </div>
+    <div className="ml-10 mt-56">
        <div>
        <h1 className="text-start   text-2xl font-serif font-bold"> Tour Section</h1>
         <div className="w-52 bg-red-500 h-1 border rounded-xl">
