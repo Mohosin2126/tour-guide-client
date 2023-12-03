@@ -18,6 +18,7 @@ const Navbar = () => {
       <li className="font-bold font-serif text-lg text-rose-600"><Link>Community</Link></li>
       <li className="font-bold font-serif text-lg text-rose-600"><Link >Blogs</Link></li>
       <li className="font-bold font-serif text-lg text-rose-600"><Link >About Us</Link></li>
+      <li className="font-bold font-serif text-lg text-rose-600"><Link >Contact Us</Link></li>
      
       {
         user ? (
@@ -30,7 +31,7 @@ const Navbar = () => {
   );
 
   return (
-    <div  className="navbar justify-between md:justify-normal md:gap-60 gap-36 h-28 mb-4">
+    <div  className="navbar justify-between md:justify-normal md:gap-52 gap-36 h-28 mb-4">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
