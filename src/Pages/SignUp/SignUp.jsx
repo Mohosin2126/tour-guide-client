@@ -94,7 +94,7 @@ const SignUp = () => {
           </div>
           <div className="form-control">
             <label htmlFor='photourl' className='label'>
-              <span className='label-text'>Photo URL</span>
+         Photo URL
             </label>
             <input
               type='text'
