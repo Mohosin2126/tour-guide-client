@@ -48,8 +48,9 @@ const Banner = () => {
         className="mySwiper"
       >
         <SwiperSlide>
+     
           <div className="h-screen  relative">
-            <img className="h-screen w-screen" src="https://i.ibb.co/t4qMpFP/Exploring-Coxs-Bazar.jpg" alt="" />
+            <img className="h-screen w-screen" src="https://i.ibb.co/Y29WPDw/Sajek-Valley-20161205.jpg" alt="" />
             <div className="absolute inset-0 mt-56 md:mt-48">
              <div data-aos="fade-right">
              <h1 className="text-center font-serif md:font-extrabold md:text-4xl text-2xl text-white">Your Gateway to Extraordinary Travel 
@@ -70,7 +71,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
         <div className="h-screen  relative">
-            <img className="h-screen w-screen" src="https://i.ibb.co/R6MV1MP/4683.jpg" alt="" />
+            <img className="h-screen w-screen" src="https://i.ibb.co/Zm6FDLD/top-ten-tourist-places-to-visit-in-bangladesh-1.webp" alt="" />
             <div className="absolute inset-0 mt-56 md:mt-48">
              <div data-aos="fade-right">
              <h1 className="text-center font-serif md:font-extrabold md:text-4xl text-2xl text-white">Your Gateway to Extraordinary Travel 
@@ -89,11 +90,10 @@ const Banner = () => {
              </div>
             </div>
           </div>
-          {/* <img className="h-screen w-screen" src="https://i.ibb.co/R6MV1MP/4683.jpg" alt="" /> */}
         </SwiperSlide>
         <SwiperSlide>
         <div className="h-screen  relative">
-            <img className="h-screen w-screen" src="https://i.ibb.co/JBcp8Qt/714047.jpg" alt="" />
+            <img className="h-screen w-screen" src= "https://i.ibb.co/Sn33hpM/Kuakata-beach.jpg" alt="" />
             <div className="absolute inset-0 mt-56 md:mt-48">
              <div data-aos="fade-right">
              <h1 className="text-center font-serif md:font-extrabold md:text-4xl text-2xl text-white">Your Gateway to Extraordinary Travel 
@@ -112,13 +112,9 @@ const Banner = () => {
              </div>
             </div>
           </div>
-          {/* <img className="h-screen w-screen" src="https://i.ibb.co/JBcp8Qt/714047.jpg" alt="" /> */}
+         
         </SwiperSlide>
       </Swiper>
-
-      {/* <div className=" block absolute -mt-28"  >
-        <BannerExtended></BannerExtended>
-      </div> */}
       <div >
 {/* {autoplayTime} */}
       </div>
@@ -128,3 +124,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
+

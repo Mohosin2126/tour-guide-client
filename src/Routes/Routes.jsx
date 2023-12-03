@@ -19,6 +19,9 @@ import TouristStoryDetails from "../Components/TouristStory/TouristStoryDetails"
 import MyTour from "../Pages/DashBoard/TourGuide/MyTour";
 import AllStory from "../Components/TouristStory/AllStory";
 import MyProfile from "../Pages/DashBoard/Tourist/MyProfile/MyProfile";
+import PrivateRoute from "./PrivateRoute";
+import AdminRoute from "./AdminRoute";
+import GuideRoute from "./GuideRoute";
 
 export const router = createBrowserRouter([
   {
@@ -64,7 +67,7 @@ export const router = createBrowserRouter([
   { path: '/signup', element: <SignUp></SignUp> },
   {
     path:"/dashboard",
-    element:<DashBoard></DashBoard>,
+    element: <PrivateRoute> <DashBoard></DashBoard></PrivateRoute>  ,
     children:[
       
         {
@@ -77,11 +80,11 @@ export const router = createBrowserRouter([
         },
         {
           path:"/dashboard/manageusers",
-          element:<AllUsers></AllUsers>,
+          element:<AdminRoute><AllUsers></AllUsers></AdminRoute>   ,
         },
         {
           path:"/dashboard/myassignedtour",
-          element:<MyTour></MyTour>,
+          element:<GuideRoute><MyTour></MyTour></GuideRoute>  ,
         },
         {
           path:"/dashboard/myprofile",
