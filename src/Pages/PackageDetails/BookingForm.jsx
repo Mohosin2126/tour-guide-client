@@ -21,7 +21,7 @@ const handleBookPackage = (e) => {
     const tourDate = form.date.value;
     const tourGuide = form.tourguide.value;
   
-    if (user && user.email) {
+    if (user && user?.email) {
       // send cart item to the database
       const bookingItem = {
         email: user.email,
@@ -142,10 +142,8 @@ const handleBookPackage = (e) => {
               name="tourguide"
               className="select select-bordered w-full"
             >
-
-
-                {
-                    guides.map(guide=><option key={guide._id} value={guide.contactDetails.email}>{guide.name}</option>)
+               {
+                    guides.map(guide=><option key={guide._id} value={guide.contactDetails?.email}>{guide.name}</option>)
                 }
             </select>
           </div>
