@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { Typewriter } from 'react-simple-typewriter'
 import useAxiosPublic from "../../Hook/useAxiosPublic";
+import Comment from "./Comment";
 const GuideDetails = () => {
   const [rating, setRating] = useState(0);
   const [guides, setGuides] = useState([]);
@@ -25,7 +26,7 @@ const axiosPublic=useAxiosPublic()
       guides
     }
 
-      axiosPublic.post("/comment",userInfo)
+      axiosPublic.post("/comments",userInfo)
       .then(res=>{
           if (res.data.insertedId) {
             
@@ -126,6 +127,9 @@ const axiosPublic=useAxiosPublic()
             </div>
           </form>
         </div>
+      </div>
+      <div className="mt-10">
+        <Comment></Comment>
       </div>
     </div>
   );
