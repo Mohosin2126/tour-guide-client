@@ -6,7 +6,7 @@ const AllPackages = () => {
 const [places]=usePlace([])
     return (
         <div>
-            <div className="hero h-[500px]" style={{backgroundImage: 'url(https://i.ibb.co/vQVRryF/1582060099-9.jpg)'}}>
+            <div className="hero h-[500px]" style={{backgroundImage: 'url(https://i.ibb.co/b32pzNF/600807-sunset-5262335-1280.jpg)'}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div >
