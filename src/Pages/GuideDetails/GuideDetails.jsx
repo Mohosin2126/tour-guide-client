@@ -5,7 +5,7 @@ import '@smastrom/react-rating/style.css';
 import Swal from "sweetalert2";
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-
+import { Typewriter } from 'react-simple-typewriter'
 const GuideDetails = () => {
   const [rating, setRating] = useState(0);
   const [guides, setGuides] = useState([]);
@@ -39,6 +39,10 @@ const location=useLocation()
   }
   };
 
+ 
+  const handleDone = () => {
+    console.log(`Done after 5 loops!`)
+  }
   useEffect(() => {
     const findGuide = allGuides?.find((singleguide) => singleguide._id == id);
     setGuides(findGuide);
@@ -50,7 +54,17 @@ const location=useLocation()
         <div className="hero-content">
           <img src={guides.profilePicture} className="w-1/2 rounded-lg shadow-2xl" />
           <div>
-            <h1 className="text-5xl font-semibold font-serif text-red-50 "> {guides.name}</h1>
+         
+            <h1 className="text-5xl font-semibold font-serif text-red-50 "> <Typewriter
+  words={[`${guides.name}`]}
+  loop={5}
+  cursor
+  cursorStyle='_'
+  typeSpeed={70}
+  deleteSpeed={50}
+  delaySpeed={1000}
+  onLoopDone={handleDone}
+/> </h1>
 
             <p className="py-3 text-lg font-sans">Education: {guides?.education?.degree} </p>
             <p className="py-3 text-lg font-sans">Skill: {guides?.skills?.one} , {guides?.skills?.two} , {guides?.skills?.three}</p>
@@ -66,7 +80,7 @@ const location=useLocation()
         <div className="w-60 mt-5 mx-auto">
           <Rating style={{ maxWidth: 250 }} value={rating} onChange={setRating} />
         </div>
-        <div>
+        <div className="mt-5">
           <form>
             <div className="w-full mb-4 border rounded-lg bg-gray-50">
               <div className="px-4 py-2 bg-white rounded-t-lg">
@@ -74,7 +88,7 @@ const location=useLocation()
                 <textarea
                   id="comment"
                   rows="4"
-                  className="w-full px-0 text-lg focus:ring-0"
+                  className="w-full text-gray-50 px-0 text-lg focus:ring-0"
                   placeholder="Write a comment..."
                   value={inputField}
                   onChange={(e) => setInputField(e.target.value)}
