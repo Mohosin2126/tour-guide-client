@@ -39,26 +39,43 @@ const AllUsers = () => {
         // .finally(() => setIsUpdating(false));
     }
     
+    const handleMakeTourGuide = (user) => {
+        setIsUpdating(true);
+        axiosSecure.patch(`/users/guide/${user._id}`)
+          .then((res) => {
+            console.log(res.data);
+            if (res.data.modifiedCount > 0) {
+              Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `${user.name} is a Guide Now!`,
+                showConfirmButton: false,
+                timer: 1500,
+              });
+              const guideInfo={
+                name:user.name ,
+                profilePicture:user.photo ,
+                contactDetails:{email:user.email,phone:user.phone,location:user.location}
 
-const handleMakeTourGuide=user=>{
-    setIsUpdating(true);
-    axiosSecure.patch(`/users/guide/${user._id}`)
-        .then(res =>{
-            console.log(res.data)
-            if(res.data.modifiedCount > 0){
-                refetch();
-                Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title: `${user.name} is an Guide Now!`,
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
+              }
+              // Fix the axios post request syntax
+              axiosSecure.post("/guide",guideInfo)
+                .then((res) => {
+                  console.log(res.data.insertedId);
+                })
+                .catch((error) => {
+                  console.error("Error making user a guide:", error);
+                });
             }
-       })
-    //    enable the button 
-    //    .finally(() => setIsUpdating(false));
-}
+          })
+          .catch((error) => {
+            console.error("Error updating user to guide:", error);
+          });
+      };
+      
+
+       
+    
     return (
         <div>
         <div className="flex justify-evenly my-4">

@@ -6,18 +6,8 @@
           "email": "sara.ahmed@example.com",
           "phone": "+880 1712 345678",
           "location": "Dhaka, Bangladesh"
-      },
-      "education": {
-          "degree": "Bachelor of Tourism Management",
-          "major": "Tourism",
-          "school": "Tourism University Bangladesh",
-          "graduationYear": 2016
-      },
-      "skills": {
-          "one":  "communication",
-          "two": "culturalExpertise",
-          "three": "customerEngagement"
       }
+    
   },
   {
   
@@ -27,18 +17,8 @@
           "email": "rahim.khan@example.com",
           "phone": "+880 1712 345679",
           "location": "Chittagong, Bangladesh"
-      },
-      "education": {
-          "degree": "Bachelor of Arts",
-          "major": "History",
-          "school": "Chittagong University",
-          "graduationYear": 2014
-      },
-      "skills": {
-          "one":  "localHistoryExpertise",
-          "two":"adventureTours",
-          "three": "communication"
       }
+    
   },
   {
      
@@ -48,17 +28,6 @@
           "email": "aishad.rahman@example.com",
           "phone": "+880 1712 345680",
           "location": "Sylhet, Bangladesh"
-      },
-      "education": {
-          "degree": "Bachelor of Hotel Management",
-          "major": "Hospitality",
-          "school": "Sylhet Hotel School",
-          "graduationYear": 2018
-      },
-      "skills": {
-        "one": "hospitalityManagement",
-          "two": "culinaryTours",
-          "three":"customerService"
       }
   },
   {
@@ -69,17 +38,6 @@
           "email": "kabir.islam@example.com",
           "phone": "+880 1712 345681",
           "location": "Rangamati, Bangladesh"
-      },
-      "education": {
-          "degree": "Bachelor of Environmental Science",
-          "major": "Ecotourism",
-          "school": "Rangamati University",
-          "graduationYear": 2017
-      },
-      "skills": {
-        "one": "ecotourismManagement",
-          "two":"natureExploration",
-          "three":"environmentalEducation"
       }
   },
   {
@@ -90,17 +48,6 @@
           "email": "nahid.chowdhury@example.com",
           "phone": "+880 1712 345682",
           "location": "Khulna, Bangladesh"
-      },
-      "education": {
-          "degree": "Bachelor of Fine Arts",
-          "major": "Art and Culture",
-          "school": "Khulna Art Institute",
-          "graduationYear": 2016
-      },
-      "skills": {
-        "one":"artAndCultureTours",
-          "two":  "creativeWorkshops",
-          "three":"multimediaPresentations"
       }
   },
   {
@@ -111,17 +58,6 @@
           "email": "imran.hassan@example.com",
           "phone": "+880 1712 345683",
           "location": "Barisal, Bangladesh"
-      },
-      "education": {
-          "degree": "Bachelor of Commerce",
-          "major": "Business Administration",
-          "school": "Barisal University",
-          "graduationYear": 2015
-      },
-      "skills": {
-        "one":  "businessTours",
-          "two":"marketExploration",
-          "three":  "entrepreneurialInsights"
       }
   },
   {
@@ -132,17 +68,6 @@
           "email": "Touhidul@example.com",
           "phone": "+880 1712 345684",
           "location": "Rajshahi, Bangladesh"
-      },
-      "education": {
-          "degree": "Bachelor of Science",
-          "major": "Natural Sciences",
-          "school": "Rajshahi University",
-          "graduationYear": 2017
-      },
-      "skills": {
-        "one":"natureTours",
-          "two":  "birdWatching",
-          "three": "environmentalInterpretation"
       }
   },
   {
@@ -153,17 +78,6 @@
           "email": "farhan.khan@example.com",
           "phone": "+880 1712 345685",
           "location": "Mymensingh, Bangladesh"
-      },
-      "education": {
-          "degree": "Bachelor of Agricultural Science",
-          "major": "Agricultural Tourism",
-          "school": "Mymensingh Agricultural University",
-          "graduationYear": 2016
-      },
-      "skills": {
-        "one": "agriculturalTours",
-          "two": "farmVisits",
-          "three": "agroTourismDevelopment"
       }
   }
 ]

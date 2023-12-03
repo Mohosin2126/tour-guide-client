@@ -22,7 +22,6 @@ import MyProfile from "../Pages/DashBoard/Tourist/MyProfile/MyProfile";
 import PrivateRoute from "./PrivateRoute";
 import AdminRoute from "./AdminRoute";
 import GuideRoute from "./GuideRoute";
-import SignUpGuide from "../Pages/SignUp/SignUpGuide";
 import AddPackages from "../Pages/DashBoard/Admin/AddPackages/AddPackages";
 
 export const router = createBrowserRouter([
@@ -67,7 +66,6 @@ export const router = createBrowserRouter([
   },
   { path: '/login', element:<Login></Login> },
   { path: '/signup', element: <SignUp></SignUp> },
-  {path:"/signupguide" ,element:<SignUpGuide></SignUpGuide>},
   {
     path:"/dashboard",
     element: <PrivateRoute> <DashBoard></DashBoard></PrivateRoute>  ,

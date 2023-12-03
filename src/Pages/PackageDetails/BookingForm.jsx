@@ -21,7 +21,7 @@ const handleBookPackage = (e) => {
     const tourDate = form.date.value;
     const tourGuide = form.tourguide.value;
   
-    if (user && user?.email) {
+    if (user && user.email) {
       // send cart item to the database
       const bookingItem = {
         email: user.email,
@@ -51,10 +51,10 @@ const handleBookPackage = (e) => {
                 Swal.fire({
                     position: 'top',
                     icon: 'success',
-                    title: 'Added to Your Booking List',
+                    title: `Added to Your Booking List ${<button><Link to="/dashboard/mybookings"><li>Your Bookings</li></Link></button>}`,
                     showConfirmButton: false,
                     timer: 4500,
-                    htmlContainer: `${<Link to={"/dashboard/mybookings"}><li>Your Bookings</li></Link>}`
+                
                   });
                   
                   

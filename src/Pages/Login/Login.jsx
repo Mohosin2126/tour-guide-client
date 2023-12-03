@@ -17,9 +17,10 @@ const Login = () => {
     .then(result =>{
         console.log(result.user);
         const userInfo = {
-            email: result.user?.email,
-            name: result.user?.displayName,
-            photo: result.user?.photoURL,
+          email: result.user?.email,
+          name: result.user?.displayName,
+          photo: result.user?.photoURL,
+         phone:result.user?.phoneNumber
         }
         axiosPublic.post('/users', userInfo)
         .then(res =>{
@@ -128,7 +129,7 @@ const Login = () => {
         <p className='px-6 text-sm text-center text-gray-400'>
           Don&apos;t have an account yet?{' '}
           <Link
-            to='/signupguide'
+            to='/signup'
             className='hover:underline hover:text-rose-500 text-gray-600'
           >
             Sign up

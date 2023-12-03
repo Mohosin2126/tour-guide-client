@@ -73,11 +73,11 @@ const axiosPublic=useAxiosPublic()
     <div>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content">
-          <img src={guides.profilePicture} className="w-1/2 rounded-lg shadow-2xl" />
+          <img src={guides?.profilePicture} className="w-1/2 rounded-lg shadow-2xl" />
           <div>
          
             <h1 className="text-5xl font-semibold font-serif text-red-50 "> <Typewriter
-  words={[`${guides.name}`]}
+  words={[`${guides?.name}`]}
   loop={5}
   cursor
   cursorStyle='_'
@@ -87,8 +87,6 @@ const axiosPublic=useAxiosPublic()
   onLoopDone={handleDone}
 /> </h1>
 
-            <p className="py-3 text-lg font-sans">Education: {guides?.education?.degree} </p>
-            <p className="py-3 text-lg font-sans">Skill: {guides?.skills?.one} , {guides?.skills?.two} , {guides?.skills?.three}</p>
             <p className="py-3 text-lg font-sans">Email: {guides?.contactDetails?.email} </p>
             <p className="py-3 text-lg font-sans">Phone: {guides?.contactDetails?.phone} </p>
             <p className="py-3 text-lg font-sans">Address: {guides?.contactDetails?.location} </p>
