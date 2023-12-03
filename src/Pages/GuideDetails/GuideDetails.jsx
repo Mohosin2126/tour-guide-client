@@ -6,19 +6,39 @@ import Swal from "sweetalert2";
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { Typewriter } from 'react-simple-typewriter'
+import useAxiosPublic from "../../Hook/useAxiosPublic";
 const GuideDetails = () => {
   const [rating, setRating] = useState(0);
   const [guides, setGuides] = useState([]);
   const allGuides = useLoaderData();
   const { id } = useParams();
-
-  const [inputField, setInputField] = useState("");
+const [inputField, setInputField] = useState("");
 const {user}=useContext(AuthContext)
 const navigate=useNavigate()
 const location=useLocation()
-  const handleInputField = () => {
+const axiosPublic=useAxiosPublic()
+ const handleInputField = () => {
     if(user && user.email){
-    console.log(inputField)
+    const userInfo={
+      user,
+      inputField,
+      guides
+    }
+
+      axiosPublic.post("/comment",userInfo)
+      .then(res=>{
+          if (res.data.insertedId) {
+            
+            Swal.fire({
+              position: "top",
+              icon: "success",
+              title: "Thank You For Your FeedBack",
+              showConfirmButton: false,
+              timer: 1500
+            });  
+      
+          }
+      })
   }
   else{
       Swal.fire({
