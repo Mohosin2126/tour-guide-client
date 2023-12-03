@@ -35,9 +35,9 @@ const Booking = () => {
     return (
         <div>
         <div>
-        <div className="flex justify-evenly my-4">
-            <h2 className="text-3xl">All Booking Packages</h2>
-            <h2 className="text-3xl">Total Booking:{bookings.length} </h2>
+        <div className="flex justify-evenly gap-10 my-4">
+            <h2 className="text-3xl font-serif font-bold">All Booking Packages</h2>
+            <h2 className="text-2xl">Total Booking: <span className="text-3xl font-semibold text-green-400">{bookings.length}</span> </h2>
         </div>
         <div className="overflow-x-auto">
             <table className="table table-zebra w-full">
@@ -60,20 +60,20 @@ const Booking = () => {
     <tr key={booking._id}>
 
       <th>{index + 1}</th>
-      <td>{booking?.touristName}</td>
-      <td>{booking?.tourGuide}</td>
-      <td>{booking?.tourDate}</td>
-      <td>{booking?.price}</td>
-      <td>{booking?.status}</td>
+      <td className="font-base uppercase text-teal-500">{booking?.touristName}</td>
+      <td className="font-medium from-stone-100">{booking?.tourGuide}</td>
+      <td className="font-medium text-blue-700">{booking?.tourDate}</td>
+      <td className="font-medium text-orange-600">{booking?.price}</td>
+      <td className="font-medium text-green-700">{booking?.status}</td>
       <td>
         {booking.status === "Accepted" ? (
-          <button className=" btn btn-success">Pay</button>
+          <button className=" btn btn-sm btn-success">Pay</button>
         ) : (
           <button className="disable ">Pay</button>
         )}
       </td>
       <td>{booking.status === "In Review" ? (
-          <button onClick={()=>handleCancel(booking._id)} className=" btn btn-success">Cancel</button>
+          <button onClick={()=>handleCancel(booking._id)} className=" btn btn-outline btn-error btn-sm">Cancel</button>
         ) : (
           <button className="disable ">Cancel</button>
         )}</td>
