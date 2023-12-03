@@ -42,7 +42,11 @@ const Wishlist = () => {
 
 
     return (
-        <div>
+        <div >
+              <div className="flex justify-evenly gap-10 my-4">
+            <h2 className="text-3xl font-serif font-bold">My Wishlist</h2>
+            <h2 className="text-2xl">Total Package : <span className="text-3xl font-semibold text-green-400">{wishlist.length}</span> </h2>
+        </div>
   <div className="overflow-x-auto">
             <table className="table  w-full">
                 {/* head */}
@@ -73,10 +77,10 @@ const Wishlist = () => {
                                     </div>
                                 </div>
                             </td>
-                            <td>
+                            <td className="font-base uppercase text-teal-500">
                                 {item.title}
                             </td>
-                            <td>{item.price}</td>
+                            <td className="font-medium text-orange-600">{item.price}</td>
                             <th>
                            
                            <Link to={`/packagedetails/${wishlist._id}`}> <button
