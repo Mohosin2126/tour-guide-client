@@ -4,9 +4,8 @@ import ActivitiesCard from "./ActivitiesCard";
 import useGuide from "../../Hook/useGuide";
 import ActivitiesGuide from "./ActivitiesGuide";
 import BookingForm from "./BookingForm";
-import Gallery from "./Gallery";
-
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 const PackageDetails = () => {
   const [packages, setPackages] = useState({});
   const allPackages = useLoaderData();
@@ -27,11 +26,15 @@ console.log(guides)
 
   return (
     <div >
-      <div>
-{
-  packages?.gallery?.map(item=><Gallery item={item} key={item.id}></Gallery>)
-}
-      </div>
+     <div>
+     < Carousel>
+     {packages?.gallery?.map((item) =><img src={item.url} key={item.id}></img>)}
+
+</Carousel>
+        
+
+</div>
+
     <div className="ml-10 mt-56">
        <div>
        <h1 className="text-start   text-2xl font-serif font-bold"> Tour Section</h1>
