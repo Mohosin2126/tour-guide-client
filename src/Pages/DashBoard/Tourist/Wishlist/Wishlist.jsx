@@ -83,7 +83,7 @@ const Wishlist = () => {
                             <td className="font-medium text-orange-600">{item.price}</td>
                             <th>
                            
-                           <Link to={`/packagedetails/${wishlist._id}`}> <button
+                           <Link to={`/packagedetails/${item._id}`}> <button
                                        
                                        className="btn btn-ghost btn-lg">
                                        <FcViewDetails />

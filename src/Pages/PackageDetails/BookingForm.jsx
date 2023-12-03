@@ -20,7 +20,7 @@ const handleBookPackage = (e) => {
     const price = form.price.value;
     const tourDate = form.date.value;
     const tourGuide = form.tourguide.value;
-  
+  const packagename=form.packagename.value
     if (user && user.email) {
       // send cart item to the database
       const bookingItem = {
@@ -33,6 +33,7 @@ const handleBookPackage = (e) => {
         tourGuide,
         title: packages.title,
         location: packages.location,
+        packagename,
         status: "In Review"
       };
   
@@ -148,6 +149,17 @@ const handleBookPackage = (e) => {
             </select>
           </div>
         </div>
+</div>
+<div className="md:flex mb-8">
+  <div className="form-control md:w-1/2">
+      <label className="label">
+          <span className="label-text text-lg ">Package Name</span>
+      </label>
+      <label className="input-group">
+          <input  type="text" name="packagename" required placeholder="Package Name"   className="input input-bordered w-full" />
+      </label>
+  </div>
+ 
 </div>
 <input  type="submit" value="Book Now" className="btn-block mb-10 bg-transparent hover:bg-red-600 text-red-600 font-serif font-semibold hover:text-white py-1 md:py-2 px-2 md:px-4 border  hover:border-transparent rounded" />
 

@@ -43,8 +43,8 @@ const Booking = () => {
             <table className="table table-zebra w-full">
                 {/* head */}
                 <thead>
-                    <tr>
-                        <th></th>
+                    <tr><th></th>
+                        <th>Package Name</th>
                         <th>Name</th>
                         <th> Guide Name</th>
                         <th>Date</th>
@@ -60,6 +60,7 @@ const Booking = () => {
     <tr key={booking._id}>
 
       <th>{index + 1}</th>
+      <td>{booking?.packagename}</td>
       <td className="font-base uppercase text-teal-500">{booking?.touristName}</td>
       <td className="font-medium from-stone-100">{booking?.tourGuide}</td>
       <td className="font-medium text-blue-700">{booking?.tourDate}</td>
