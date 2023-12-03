@@ -2,7 +2,7 @@
 const ActivitiesCard = ({activity}) => {
    const{title,description,schedule}=activity
     return (
-   <div className="ml-10 mt-5">
+   <div className=" mt-5">
     <div className="collapse bg-base-200">
   <input type="radio" name="my-accordion-1" /> 
   <div className="text-green-500 collapse-title text-xl font-medium">

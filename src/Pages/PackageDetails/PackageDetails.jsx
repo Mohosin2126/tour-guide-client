@@ -28,14 +28,14 @@ console.log(guides)
     <div >
      <div>
      < Carousel>
-     {packages?.gallery?.map((item) =><img src={item.url} key={item.id}></img>)}
+     {packages?.gallery?.map((item) =><img className=" w-full"  src={item.url} key={item.id}></img>)}
 
 </Carousel>
         
 
 </div>
 
-    <div className="ml-10 mt-56">
+    <div className="mt-10">
        <div>
        <h1 className="text-start   text-2xl font-serif font-bold"> Tour Section</h1>
         <div className="w-52 bg-red-500 h-1 border rounded-xl">
@@ -57,17 +57,17 @@ console.log(guides)
     packages?.activities?.map((activity )=><ActivitiesCard key={activity.title} activity={activity}></ActivitiesCard>)
   }
 </div>
-    <div className="ml-10 mt-10">
+    <div className=" mt-10">
     <h1 className="text-start   text-2xl font-serif font-semibold"> Tour Guide</h1>
         <div className="w-52 bg-red-500 h-1 border rounded-xl">
        </div>
      <div className=" mt-8 grid grid-cols-2 gap-5">
-     {
+     {  
         guides.map(guide=><ActivitiesGuide guide={guide} key={guide._id}></ActivitiesGuide>)
       }
      </div>
     </div>
-    <div className="ml-10 mt-10">
+    <div className="  mt-10">
      <div>
         <h1 className="text-start   text-2xl font-serif font-semibold"> Booking Form</h1>
         <div className="w-52 bg-red-500 h-1 border rounded-xl">
