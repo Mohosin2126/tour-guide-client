@@ -46,7 +46,7 @@ const Booking = () => {
                     <tr><th></th>
                         <th>Package Name</th>
                         <th>Name</th>
-                        <th> Guide Name</th>
+                        <th> Guide Email</th>
                         <th>Date</th>
                         <th>Price</th>
                         <th>Status</th>

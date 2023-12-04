@@ -52,7 +52,8 @@ My Wishlist: Shows a table of wishlist items with Delete and Visit Details optio
 - Tour Guide Dashboard:
 My Profile: Displays tour guide information with a form for adding a guide's profile.
 My Assigned Tours: Tabular display of assigned tours with Accept and Reject options.
-Admin Dashboard:
+ - Admin Dashboard:
 My Profile: Displays admin information.
 Add Package: Allows administrators to add packages.
 Manage Users: Displays user information with buttons for changing roles.
+[LiveLink]()
