@@ -38,7 +38,7 @@ const AllUsers = () => {
             if(res.data.modifiedCount > 0){
                 refetch();
                 Swal.fire({
-                    position: "top-end",
+                    position: "top",
                     icon: "success",
                     title: `${user.name} is an Admin Now!`,
                     showConfirmButton: false,
@@ -57,7 +57,7 @@ const AllUsers = () => {
             console.log(res.data);
             if (res.data.modifiedCount > 0) {
               Swal.fire({
-                position: "top-end",
+                position: "top",
                 icon: "success",
                 title: `${user.name} is a Guide Now!`,
                 showConfirmButton: false,
