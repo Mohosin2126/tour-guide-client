@@ -24,7 +24,7 @@ const Login = () => {
         }
         axiosPublic.post('/users', userInfo)
         .then(res =>{
-          
+          console.log(res)
             navigate('/');
         })
     })
