@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { AuthContext } from "../Pages/AuthProvider/AuthProvider";
 import { LuLogOut } from "react-icons/lu";
 import { MdAssignment } from "react-icons/md";
+import { IoBagAdd } from "react-icons/io5";
 const DashBoard = () => {
   const [isAdmin] = useAdmin();
   const [isGuide] = useGuideDashboard();
@@ -33,7 +34,7 @@ const DashBoard = () => {
               </li>
               <li>
                 <NavLink to="/dashboard/addpackage">
-                  <FaUtensils></FaUtensils>
+                 < IoBagAdd/>
                   Add Package
                 </NavLink>
               </li>
