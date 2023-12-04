@@ -63,7 +63,7 @@ const AllPackageCard = ({place}) => {
     return (
         <div>
              <div>
-        <div className="relative flex w-96 md:h-[500px] flex-col rounded-xl  bg-clip-border text-gray-700 shadow-lg">
+        <div className="relative flex w-96 md:h-[500px] flex-col rounded-xl light: dark:bg-gray-800  bg-clip-border text-gray-700 shadow-lg">
   <div className="relative  overflow-hidden text-white shadow-lg rounded-lg bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
     <img className="h-[350px] w-96"
       src={image}

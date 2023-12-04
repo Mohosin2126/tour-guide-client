@@ -5,7 +5,7 @@ const ActivitiesCard = ({activity}) => {
    <div className=" mt-5">
     <div className="collapse bg-base-200">
   <input type="radio" name="my-accordion-1" /> 
-  <div className="text-green-500 collapse-title text-xl font-medium">
+  <div className="text-green-500 md:text-start  text-center collapse-title text-xl font-medium">
    {title}
   </div>
   <div className="collapse-content space-y-2"> 

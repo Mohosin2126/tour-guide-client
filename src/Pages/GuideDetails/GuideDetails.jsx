@@ -72,11 +72,10 @@ const axiosPublic=useAxiosPublic()
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content">
-          <img src={guides?.profilePicture} className="w-1/2 rounded-lg shadow-2xl" />
+        <div className="md:hero-content md:text-start text-center ">
+          <img src={guides?.profilePicture} className="w-1/2 md:mx-0 mx-auto rounded-lg shadow-2xl" />
           <div>
-         
-            <h1 className="text-5xl font-semibold font-serif text-red-50 "> <Typewriter
+          <h1 className=" text-2xl md:text-5xl font-semibold font-serif "> <Typewriter
   words={[`${guides?.name}`]}
   loop={5}
   cursor
@@ -86,7 +85,6 @@ const axiosPublic=useAxiosPublic()
   delaySpeed={1000}
   onLoopDone={handleDone}
 /> </h1>
-
             <p className="py-3 text-lg font-sans">Email: {guides?.contactDetails?.email} </p>
             <p className="py-3 text-lg font-sans">Phone: {guides?.contactDetails?.phone} </p>
             <p className="py-3 text-lg font-sans">Address: {guides?.contactDetails?.location} </p>

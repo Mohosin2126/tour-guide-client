@@ -37,18 +37,18 @@ const PackageDetails = () => {
 
     <div className="mt-10">
        <div>
-       <h1 className="text-start   text-2xl font-serif font-bold"> Tour Section</h1>
-        <div className="w-52 bg-red-500 h-1 border rounded-xl">
+       <h1 className="md:text-start  text-center   text-2xl font-serif font-bold"> Tour Section</h1>
+        <div className="w-52 mx-auto md:mx-0 bg-red-500 h-1 border rounded-xl">
        </div>
         <div className="mt-5 space-y-2">
-       <h1 className="text-lg font-serif">{packages.title}</h1 >
-      <h1 className="text-base font-normal">{packages.location}</h1>
-      <h2 className="font-medium text-lg text-red-800">{packages.price}</h2>
+       <h1 className="text-lg md:text-start  text-center font-serif">{packages.title}</h1 >
+      <h1 className="text-base md:text-start  text-center font-normal">{packages.location}</h1>
+      <h2 className="font-medium md:text-start  text-center text-lg text-red-800">{packages.price}</h2>
      </div>
         </div>
         <div className="mt-10">
-        <h1 className="text-start   text-2xl font-serif font-bold"> Tour Plan</h1>
-        <div className="w-52 bg-red-500 h-1 border rounded-xl">
+        <h1 className="md:text-start  text-center    text-2xl font-serif font-bold"> Tour Plan</h1>
+        <div className="w-52 mx-auto md:mx-0 bg-red-500 h-1 border rounded-xl">
        </div>
         </div>
     </div>
@@ -58,10 +58,10 @@ const PackageDetails = () => {
   }
 </div>
     <div className=" mt-10">
-    <h1 className="text-start   text-2xl font-serif font-semibold"> Tour Guide</h1>
-        <div className="w-52 bg-red-500 h-1 border rounded-xl">
+    <h1 className="md:text-start  text-center  text-2xl font-serif font-semibold"> Tour Guide</h1>
+        <div className="w-52 mx-auto md:mx-0  bg-red-500 h-1 border rounded-xl">
        </div>
-     <div className=" mt-8 grid grid-cols-2 gap-5">
+     <div className=" mt-8 grid md:grid-cols-2 gap-5">
      {  
         guides.map(guide=><ActivitiesGuide guide={guide} key={guide._id}></ActivitiesGuide>)
       }
@@ -69,8 +69,8 @@ const PackageDetails = () => {
     </div>
     <div className="  mt-10">
      <div>
-        <h1 className="text-start   text-2xl font-serif font-semibold"> Booking Form</h1>
-        <div className="w-52 bg-red-500 h-1 border rounded-xl">
+        <h1 className="md:text-start  text-center text-2xl font-serif font-semibold"> Booking Form</h1>
+        <div className="w-52 mx-auto md:mx-0 bg-red-500 h-1 border rounded-xl">
        </div>
      </div>
       <BookingForm packages={packages} key={packages._id}></BookingForm>

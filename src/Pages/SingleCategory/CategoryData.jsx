@@ -64,7 +64,7 @@ const CategoryData = ({allcategory}) => {
 
     return (
         <div>
-         <div className=" relative flex w-96 md:h-[500px] flex-col rounded-xl  bg-clip-border text-gray-700 shadow-lg">
+         <div className=" relative flex w-96 md:h-[500px] flex-col rounded-xl  bg-clip-border light: dark:bg-gray-800 text-gray-700 shadow-lg">
   <div className="relative  overflow-hidden text-white shadow-lg rounded-lg bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
     <img className="h-80 w-96"
       src={image}
