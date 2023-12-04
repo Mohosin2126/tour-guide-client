@@ -27,7 +27,29 @@
   "price": "$1500",
   "location": "Cox's Bazar, Bangladesh",
   "category": "Adventure",
-  "coverPhoto": "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg"
+  "coverPhoto": "https://i.ibb.co/P9W621p/Parasailing-coxsbazar-1-768x512.jpg",
+  "activities": [
+    {
+      "title": "Day01",
+      "description": "Explore the breathtaking beauty of Sundarbans.",
+      "schedule": "8:00 AM - 6:00 PM"
+    },
+    {
+      "title": "Day02",
+      "description": "Engage in exciting activities like hiking and bird watching.",
+      "schedule": "9:00 AM - 5:00 PM"
+    },
+    {
+      "title": "Day03",
+      "description": "Discover local culture and traditions.",
+      "schedule": "10:00 AM - 4:00 PM"
+    },
+    {
+      "title": "Day04",
+      "description": "Experience a thrilling boat safari.",
+      "schedule": "7:00 AM - 3:00 PM"
+    }
+  ]
 },
 {
   "image": "https://i.ibb.co/Dz0Hrct/167378cd9499a85e212b222995be4d47.webp",
