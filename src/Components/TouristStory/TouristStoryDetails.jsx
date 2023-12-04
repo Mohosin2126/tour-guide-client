@@ -23,7 +23,7 @@ const TouristStoryDetails = () => {
   const handleFacebook = () => {
     if (!user || !user.email) {
       // User is not logged in, redirect to login page
-      console.log("User not logged in. Redirecting to login page.");
+   
       navigate('/login', { state: { from: location } });
       return null; // Prevent rendering the rest of the component
     }
@@ -32,7 +32,7 @@ const TouristStoryDetails = () => {
   const handleWhatsApp = () => {
     if (!user || !user.email) {
       // User is not logged in, redirect to login page
-      console.log("User not logged in. Redirecting to login page.");
+ 
       navigate('/login', { state: { from: location } });
       return null; // Prevent rendering the rest of the component
     }

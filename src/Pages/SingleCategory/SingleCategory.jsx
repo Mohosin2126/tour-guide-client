@@ -11,7 +11,7 @@ const SingleCategory = () => {
       const categories=allCategories.filter(items=>items.category == category)
       setallCategoryType(categories)
      },[])
-     console.log(allCategoryType)
+
     
 
 

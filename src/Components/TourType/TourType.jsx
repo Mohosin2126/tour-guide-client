@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const TourType = () => {
     const [categories] = useCategory([])
-    console.log(categories)
+    
     return (
         <div className="mt-10">
             <h1 className="text-center font-serif text-3xl text-extrabold mt-10">Tour Type</h1>

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const ActivitiesGuide = ({ guide }) => {
-    console.log(guide);
     const {_id,name,profilePicture,contactDetails}=guide
     return (
         <div>

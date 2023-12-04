@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import useAxiosSecure from "../../../../Hook/useAxiosSecure";
 const Wishlist = () => {
     const [wishlist,refetch]=useWishlist([])
-    console.log(wishlist)
+
 
     const axiosSecure=useAxiosSecure()
     const handleDelete=(id)=>{

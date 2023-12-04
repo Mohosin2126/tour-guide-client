@@ -15,7 +15,7 @@ const Login = () => {
   const handleGoogleSignIn = () =>{
     googleSignIn()
     .then(result =>{
-        console.log(result.user);
+   
         const userInfo = {
           email: result.user?.email,
           name: result.user?.displayName,
@@ -24,7 +24,7 @@ const Login = () => {
         }
         axiosPublic.post('/users', userInfo)
         .then(res =>{
-            console.log(res.data);
+          
             navigate('/');
         })
     })
@@ -34,7 +34,7 @@ const Login = () => {
       const form = event.target;
       const email = form.email.value;
       const password = form.password.value;
-      console.log(email, password);
+      
       signIn(email, password)
           .then(result => {
               const user = result.user;

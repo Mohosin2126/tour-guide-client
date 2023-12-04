@@ -12,16 +12,16 @@ const MyTour = () => {
         queryFn:async()=>{
             const res =await axiosSecure.get("/guidebookings")
            const data= res?.data?.filter(bookingsData=>bookingsData?.tourGuide== user.email)
-            console.log(data)
+      
            return data
     
         }
     })
-    console.log(bookings)
+  
     const handleAccept =(id) =>{
         axiosSecure.patch(`/guidebookings/accept/${id}`)
         .then(res =>{
-            console.log(res.data)
+            
             if(res.data.modifiedCount > 0){
                 refetch();
                 Swal.fire({
@@ -41,7 +41,7 @@ const MyTour = () => {
    
         axiosSecure.patch(`/guidebookings/reject/${id}`)
         .then(res =>{
-            console.log(res.data)
+         
             if(res.data.modifiedCount > 0){
                 refetch();
                 Swal.fire({

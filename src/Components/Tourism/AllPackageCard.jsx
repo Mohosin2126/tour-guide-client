@@ -16,7 +16,7 @@ const AllPackageCard = ({place}) => {
       const handleAddToWishlist=(place)=>{
         if(user && user.email){
             //  send cart item to the database 
-            console.log(place)
+            
     const wishlistItem={
        categoryId :_id,
         email:user.email,

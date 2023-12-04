@@ -12,8 +12,8 @@ const Comment = () => {
     
         }
     })
-    // const data=res?.data?.filter(commentData=>console.log(commentData?.guides?.contactDetails?.email))
-console.log(comments)
+   
+
     return (
         <div>
             

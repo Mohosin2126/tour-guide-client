@@ -17,7 +17,7 @@ const MyProfile = () => {
         }
     })
     const userData=users.find(user=>user?.email === userEmail)
-    console.log(userData)
+  
     return (
         <div>
             <h1 className="text-3xl text-center">My Profile</h1>

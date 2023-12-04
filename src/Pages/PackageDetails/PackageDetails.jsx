@@ -12,7 +12,7 @@ const PackageDetails = () => {
   const { id } = useParams();
   const[ guides]=useGuide([])
 
-console.log(guides)
+
 
 
   useEffect(() => {
@@ -21,7 +21,7 @@ console.log(guides)
     
     setPackages(findPackage || {});
   }, [allPackages, id]);
- console.log(packages?.gallery)
+
 
 
   return (

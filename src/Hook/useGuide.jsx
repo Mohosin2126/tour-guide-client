@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 const useGuide = () => {
     const[guides,setGuides]=useState([])
-    console.log(guides)
     const [loading,setLoading]=useState(true)
     useEffect(()=>{
         fetch("https://y-gold-two.vercel.app/guide")

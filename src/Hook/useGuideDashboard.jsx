@@ -10,9 +10,9 @@ const useGuideDashboard = () => {
         queryKey: [user?.email, 'isGuide'],
         enabled: !loading,
         queryFn: async () => {
-            console.log('asking or checking is guide', user)
+      
             const res = await axiosSecure.get(`/users/guide/${user.email}`);
-            // console.log(res.data);
+      
             return res.data?.guide;
         }
     })
