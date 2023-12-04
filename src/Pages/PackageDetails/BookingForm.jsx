@@ -49,15 +49,21 @@ const handleBookPackage = (e) => {
         if (result.isConfirmed) {
           axiosSecure.post("/bookings", bookingItem).then((res) => {
             if (res.data.insertedId) {
-                Swal.fire({
-                    position: 'top',
-                    icon: 'success',
-                    title: `Added to Your Booking List ${<button><Link to="/dashboard/mybookings"><li>Your Bookings</li></Link></button>}`,
-                    showConfirmButton: false,
-                    timer: 4500,
-                
-                  });
-                  
+              Swal.fire({
+                position: 'top',
+                icon: 'success',
+                title: "Added to Your Booking List",
+                html: (
+                  <button>
+                    <Link to="/dashboard/mybookings">
+                      <li>Your Bookings</li>
+                    </Link>
+                  </button>
+                ),
+                showConfirmButton: false,
+                timer: 4500,
+              });
+              
                   
             }
           });

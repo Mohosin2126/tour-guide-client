@@ -6,6 +6,7 @@ import { TbPackages } from "react-icons/tb";
 import { useContext } from "react";
 import { AuthContext } from "../Pages/AuthProvider/AuthProvider";
 import { LuLogOut } from "react-icons/lu";
+import { MdAssignment } from "react-icons/md";
 const DashBoard = () => {
   const [isAdmin] = useAdmin();
   const [isGuide] = useGuideDashboard();
@@ -53,7 +54,7 @@ const DashBoard = () => {
               </li>
               <li>
                 <NavLink to="/dashboard/myassignedtour">
-                  <FaUtensils></FaUtensils>
+                <MdAssignment />
                   My Assigned Tours
                 </NavLink>
               </li>

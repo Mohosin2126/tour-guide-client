@@ -6,6 +6,7 @@ import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
 const MyProfile = () => {
     const {user}=useContext(AuthContext)
+    console.log(user)
     const axiosSecure=useAxiosSecure()
     const {data:users=[]}=useQuery({
         queryKey:["users",user?.email],
