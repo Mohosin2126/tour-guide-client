@@ -7,7 +7,7 @@ const TouristStory = () => {
   const [stories, setStories] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/story')
+    fetch('https://y-gold-two.vercel.app/story')
       .then(res => res.json())
       .then(data => setStories(data))
   }, []);

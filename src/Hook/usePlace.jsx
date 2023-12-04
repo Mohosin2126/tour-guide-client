@@ -4,7 +4,7 @@ const usePlace=()=>{
 const[places,setPlace]=useState([])
 const [loading,setLoading]=useState(true)
 useEffect(()=>{
-    fetch("http://localhost:5000/data")
+    fetch("https://y-gold-two.vercel.app/data")
     .then(res=>res.json())
     .then(data=>{
        

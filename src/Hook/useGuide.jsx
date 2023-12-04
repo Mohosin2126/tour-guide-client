@@ -6,7 +6,7 @@ const useGuide = () => {
     console.log(guides)
     const [loading,setLoading]=useState(true)
     useEffect(()=>{
-        fetch("http://localhost:5000/guide")
+        fetch("https://y-gold-two.vercel.app/guide")
         .then(res=>res.json())
         .then(data=>{
            

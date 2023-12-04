@@ -37,17 +37,17 @@ export const router = createBrowserRouter([
       {
         path: "/packagedetails/:id",
         element: <PackageDetails></PackageDetails>,
-        loader: () => fetch("http://localhost:5000/data"),
+        loader: () => fetch("https://y-gold-two.vercel.app/data"),
       },
       {
         path: "/guidedetails/:id",
         element: <GuideDetails></GuideDetails>,
-        loader: () => fetch("http://localhost:5000/guide"),
+        loader: () => fetch("https://y-gold-two.vercel.app/guide"),
       },
       {
         path: "/tourcategory/:category",
         element: <SingleCategory></SingleCategory>,
-        loader: () => fetch("http://localhost:5000/data"),
+        loader: () => fetch("https://y-gold-two.vercel.app/data"),
       },
       {
         path:"/allpackages",
@@ -56,7 +56,7 @@ export const router = createBrowserRouter([
       {
         path: "/story/:id",
         element: <TouristStoryDetails></TouristStoryDetails>,
-        loader: () => fetch("http://localhost:5000/story"),
+        loader: () => fetch("https://y-gold-two.vercel.app/story"),
       },
      {
       path:"/allstories",

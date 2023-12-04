@@ -1,8 +1,50 @@
+import Swal from "sweetalert2";
+import useAxiosSecure from "../../../../Hook/useAxiosSecure";
+
 const AddPackages = () => {
+  const axiosSecure=useAxiosSecure()
     const handleAddPackage = (event) => {
       event.preventDefault();
   
-      
+      const form = event.target;
+      const image = form.image.value;
+      const galleryimage1 =form.galleryimage.value
+      const galleryimage2 =form.galleryimage2.value
+      const galleryimage3 =form.galleryimage3.value
+      const galleryimage4 =form.galleryimage4.value
+      const galleryimage5 =form.galleryimage5.value
+      const title = form.title.value;
+      const price = form.price.value;
+      const type = form.type.value;
+      const location = form.location.value;
+      const category = form.category.value;
+
+
+
+  const packageInfo={
+    image,
+    title,
+    type,
+    price,
+    location,
+    category,
+    gallery:[{url:galleryimage1},{url:galleryimage2},{url:galleryimage3},{url:galleryimage4},{url:galleryimage5}]
+  }
+  axiosSecure.post("/data",packageInfo)
+  .then(res=>{
+      if (res.data.insertedId) {
+        
+        Swal.fire({
+          position: "top",
+          icon: "success",
+          title: "Added To Package",
+          showConfirmButton: false,
+          timer: 1500
+        });
+      }
+  })
+  
+
     };
   
     return (
@@ -22,7 +64,43 @@ const AddPackages = () => {
                 <span className="label-text text-lg ">Gallery Image</span>
               </label>
               <label className="input-group">
-                <input type="text" name="image1" placeholder="Gallery Image" className="input input-bordered w-full" />
+                <input type="text" name="galleryimage" placeholder="Gallery Image" className="input input-bordered w-full" />
+              </label>
+            </div>
+          </div>
+          <div className="md:flex mb-8">
+            <div className="form-control md:w-1/2">
+              <label className="label">
+                <span className="label-text text-lg "> Gallery Image 2</span>
+              </label>
+              <label className="input-group">
+                <input type="text" name="galleryimage2" required placeholder="Gallery Image" className="input input-bordered w-full" />
+              </label>
+            </div>
+            <div className="form-control md:w-1/2 ml-4">
+              <label className="label">
+                <span className="label-text text-lg ">Gallery Image 3</span>
+              </label>
+              <label className="input-group">
+                <input type="text" name="galleryimage3" placeholder="Gallery Image" className="input input-bordered w-full" />
+              </label>
+            </div>
+          </div>
+          <div className="md:flex mb-8">
+            <div className="form-control md:w-1/2">
+              <label className="label">
+                <span className="label-text text-lg ">Gallery Image 4</span>
+              </label>
+              <label className="input-group">
+                <input type="text" name="galleryimage4" required placeholder="Gallery Image" className="input input-bordered w-full" />
+              </label>
+            </div>
+            <div className="form-control md:w-1/2 ml-4">
+              <label className="label">
+                <span className="label-text text-lg ">Gallery Image 5</span>
+              </label>
+              <label className="input-group">
+                <input type="text" name="galleryimage5" placeholder="Gallery Image" className="input input-bordered w-full" />
               </label>
             </div>
           </div>

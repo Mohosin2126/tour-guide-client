@@ -5,7 +5,7 @@ const useCategory = () => {
     
     const [loading,setLoading]=useState(true)
     useEffect(()=>{
-        fetch("http://localhost:5000/category")
+        fetch("https://y-gold-two.vercel.app/category")
         .then(res=>res.json())
         .then(data=>{
            
