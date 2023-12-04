@@ -101,8 +101,8 @@ const AllUsers = () => {
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Name</th>
-                        <th>Email</th>
+                        <th >Name</th>
+                        <th >Email</th>
                         <th>Guide</th>
                         <th>Admin</th>
                     </tr>
@@ -111,8 +111,8 @@ const AllUsers = () => {
                 {users.map((user, index) => (
       <tr key={user._id}>
         <th>{index + 1}</th>
-        <td>{user.name}</td>
-        <td>{user.email}</td>
+        <td className="font-base uppercase text-teal-500">{user.name}</td>
+        <td className="font-medium text-orange-600">{user.email}</td>
         <td>
           {user.role === "guide" ? (
             "guide"

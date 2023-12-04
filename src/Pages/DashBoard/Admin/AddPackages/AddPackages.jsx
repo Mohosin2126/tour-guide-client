@@ -49,6 +49,9 @@ const AddPackages = () => {
   
     return (
       <div className="mt-5">
+        <div>
+          <h1 className="mt-10 font-serif text-2xl text-center mb-5 ">
+          Add Package</h1></div>
         <form onSubmit={handleAddPackage}>
           <div className="md:flex mb-8">
             <div className="form-control md:w-1/2">
