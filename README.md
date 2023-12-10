@@ -56,4 +56,7 @@ My Assigned Tours: Tabular display of assigned tours with Accept and Reject opti
 My Profile: Displays admin information.
 Add Package: Allows administrators to add packages.
 Manage Users: Displays user information with buttons for changing roles.
-[LiveLink](https://dreamy-empanada-207ee6.netlify.app/)
+
+<br>
+
+[LiveLink](https://beautiful-parfait-253fed.netlify.app/)
