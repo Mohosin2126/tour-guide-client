@@ -31,7 +31,7 @@ const Navbar = () => {
   );
 
   return (
-    <div  className="navbar justify-between md:justify-normal md:gap-52 gap-36 h-28 mb-4">
+    <div  className="navbar justify-between md:justify-between md:gap-80 gap-36 h-28 mb-4">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
