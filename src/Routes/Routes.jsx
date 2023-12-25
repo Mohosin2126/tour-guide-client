@@ -11,7 +11,6 @@ import SingleCategory from "../Pages/SingleCategory/SingleCategory";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import Wishlist from "../Pages/DashBoard/Tourist/Wishlist/Wishlist";
-import DashBoard from "../Layout/Dashboard";
 import Booking from "../Pages/DashBoard/Tourist/Booking/Booking";
 import AllUsers from "../Pages/DashBoard/Admin/AllUsers/AllUsers";
 import AllPackages from "../Components/Tourism/AllPackages";
@@ -23,7 +22,7 @@ import PrivateRoute from "./PrivateRoute";
 import AdminRoute from "./AdminRoute";
 import GuideRoute from "./GuideRoute";
 import AddPackages from "../Pages/DashBoard/Admin/AddPackages/AddPackages";
-
+import DashBoard from "../Layout/DashBoard";
 export const router = createBrowserRouter([
   {
     path: "/",
