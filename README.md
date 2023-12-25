@@ -59,4 +59,4 @@ Manage Users: Displays user information with buttons for changing roles.
 
 <br>
 
-[LiveLink](https://beautiful-parfait-253fed.netlify.app/)
+[LiveLink](https://bdtourguide.netlify.app/)
