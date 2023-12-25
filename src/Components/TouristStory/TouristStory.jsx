@@ -23,7 +23,7 @@ const TouristStory = () => {
         stories.slice(0,4).map(story=><StoryCard story={story} key={story._id}></StoryCard>)
     }
     </div>
-    <div>
+    <div className="mb-5">
     <Link to={"/allstories"}> <button className=" mt-5 flex mx-auto bg-transparent hover:bg-red-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
 All Stories
 </button></Link>
